@@ -1,0 +1,13 @@
+#+TITLE: CS Rust
+#+DESCRIPTION:
+#+KEYWORDS:
+#+STARTUP:  content
+
+
+- [[wiki:index][Index]]
+
+- Parent: [[wiki:CS Technical][CS Technical]]
+
+- Related: 
+
+* CS Rust

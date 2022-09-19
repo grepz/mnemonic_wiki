@@ -1,0 +1,91 @@
+#+TITLE: CS Erlang and Elixir
+#+OPTIONS: ^:nil
+#+DESCRIPTION:
+#+KEYWORDS: CS, erlang, elixir, dev
+#+STARTUP:  content
+
+
+- [[wiki:index][Index]]
+
+- Parent: [[wiki:CS Technical][CS Technical]]
+
+- Related:
+
+* CS Erlang and Elixir
+
+** Erlang
+
+*** To read
+- [ ] [[https://www.infoq.com/presentations/erlang-overload/][Planning for overload]]
+- [ ] [[https://ferd.ca/erlang-otp-21-s-new-logger.html][New logger in erlang 21]]
+- [ ] [[https://blog.erlang.moe/posts/2019-10-11-hello-world.html][Trace based testing]]
+- [ ] [[https://github.com/inaka/erlang_guidelines][Coding guidelines]]
+
+*** Performance
+*** Logging
+*** Testing
+
+*** Rebar3
+**** Override erl_opts for dependency
+rebar.config:
+#+BEGIN_SRC erlang
+{overrides,
+[
+  {add, eper, [
+               {erl_opts, [nowarn_obsolete_guard, nowarn_deprecated_function, nowarn_removed]}
+              ]
+  }
+]
+}.
+#+END_SRC
+
+*** Troubleshooting
+------
+
+Q1: I have a 4GB ram in my system and it used 2GB of ram before the insertion completed wen using disc_copies. I was wondering what would happen if 100 percent of the ram was consumed? Is there any option to limit the ram consumed during disc_copies, like limiting the ram usage to 2GB?
+
+A1:
+If you are looking how to limit erlang VM memory usage you should use [[https://unix.stackexchange.com/a/125024/10710][control]] groups for it. But if you like to monitor memory usage you should use [[http://www.erlang.org/doc/man/memsup.html) memsup from [os_mon application](http://erlang.org/doc/man/os_mon_app.html][memory monitor]].
+#+BEGIN_SRC sh
+$ erl -boot start_sasl
+Erlang/OTP 18 [erts-7.0] [source] [64-bit] [smp:4:4] [async-threads:10] [hipe] [kernel-poll:false]
+
+...
+=PROGRESS REPORT==== 22-Oct-2015::22:39:46 ===
+         application: sasl
+          started_at: nonode@nohost
+Eshell V7.0  (abort with ^G)
+1> application:start(os_mon).
+...
+=PROGRESS REPORT==== 22-Oct-2015::22:40:03 ===
+         application: os_mon
+          started_at: nonode@nohost
+ok
+2>
+...
+2> memsup:get_memory_data().
+{8162500608,6514708480,{<0.7.0>,426616}}
+3> memsup:get_system_memory_data().
+[{system_total_memory,8162500608},
+{free_swap,5996748800},
+{total_swap,5997850624},
+{cached_memory,3290759168},
+{buffered_memory,444370944},
+{free_memory,1647222784},
+{total_memory,8162500608}]
+4>
+#+END_SRC
+
+------
+
+Q2: How to get information on processes queue length?
+
+A2:
+Use following snippet for Erlang:
+#+BEGIN_SRC erlang
+lists:foldl(fun (Pid, Acc) -> case erlang:process_info(Pid, message_queue_len) of {_, Val} -> case Val >= 30 of true -> [{Pid, Val} | Acc]; false -> Acc end; undefined -> Acc end end, [], erlang:processes()).
+#+END_SRC
+
+------
+
+** Elixir

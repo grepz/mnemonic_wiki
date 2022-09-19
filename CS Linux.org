@@ -1,0 +1,40 @@
+#+TITLE: CS Linux
+#+DESCRIPTION:
+#+KEYWORDS:
+#+STARTUP:  content
+
+
+- [[wiki:index][Index]]
+
+- Parent: [[wiki:CS Technical][CS Technical]]
+
+- Related: 
+
+* CS Linux
+
+** Get information on mounted device
+#+BEGIN_SRC sh
+sudo udevadm info -a -n /dev/sda1
+#+END_SRC
+
+** Write ISO image to USB
+
+1. Convert iso to dmg
+#+BEGIN_SRC sh
+hdiutil convert -format UDRW -o nameYourOutputFile nameOfYourInputFileISO
+#+END_SRC
+
+2. Check disk
+#+BEGIN_SRC sh
+diskutil list
+#+END_SRC
+
+3. Partition disk
+#+BEGIN_SRC sh
+diskutil partitionDisk /dev/disk2 1 "Free Space" "unused" "100%"
+#+END_SRC
+
+4. Write image
+#+BEGIN_SRC sh
+dd if=pathToYourOutputFile.dmg of=/dev/disk2 bs=1m
+#+END_SRC

@@ -1,0 +1,26 @@
+#+TITLE: CS shell wizardry
+#+DESCRIPTION:
+#+KEYWORDS:
+#+STARTUP:  content
+
+
+- [[wiki:index][Index]]
+
+- Parent: [[wiki:CS Technical][CS Technical]]
+
+* CS shell wizardry
+
+** AWK
+
+*** Concatenate second column into a single string
+#+BEGIN_SRC sh
+awk '{str = sprintf("%s %s", str, $2)} END {print str}' ids.txt
+#+END_SRC
+
+** Shell
+
+*** Selfpath
+When one needs to save script absolute path for later usage
+#+BEGIN_SRC sh
+export MAKESELF_SHAR="$( cd "$(dirname "$0")" && pwd)/$(basename "$0")"
+#+END_SRC

@@ -1,0 +1,27 @@
+#+TITLE: CS Technical
+#+DESCRIPTION:
+#+KEYWORDS:
+#+STARTUP:  content
+
+
+- [[wiki:index][Index]]
+
+* CS Technical
+
+** [[wiki:CS git][CS git]]
+   git lifehacks
+
+** [[wiki:CS Linux][CS Linux]]
+   Linux OS caveats
+
+** [[wiki:CS postgres][CS postgres]]
+   PostgreSQL lifehacks, hints
+
+** [[wiki:CS shell wizardry][CS shell wizardry]]
+   Various shell hacks
+
+** [[wiki:CS Rust][CS Rust]]
+   Rust language memos
+
+** [[wiki:CS Erlang and Elixir][CS Erlang and Elixir]]
+   Erlang/Elixir memos

@@ -1,0 +1,13 @@
+#+TITLE: index
+#+DESCRIPTION:
+#+KEYWORDS:
+#+STARTUP:  content
+
+* index
+
+** [[wiki:CS Technical][CS Technical]]
+   All about technology, computer science and related stuff
+** [[wiki:Automotive][Automotive]]
+   Motorcycles, automobiles and other stuff that moves
+** [[wiki:Sport][Sport]]
+   Various sports
