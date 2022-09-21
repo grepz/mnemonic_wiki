@@ -6,6 +6,16 @@
 
 - [[wiki:index][Index]]
 
+* To read
+- [ ] https://blog.heroku.com/json-schema-document-debug-apis
+- [ ] http://landoflisp.com
+- [ ] http://debuggingrules.com/?page_id=31
+- [ ] https://karl-voit.at/2017/09/23/orgmode-as-markup-only/
+- [ ] https://homepages.cwi.nl/~steven/enquire.html
+- [ ] https://fasterthanli.me/series/making-our-own-executable-packer/part-1
+- [ ] https://eli.thegreenplace.net/2017/adventures-in-jit-compilation-part-1-an-interpreter/
+- [ ] https://www.confluent.io/blog/turning-the-database-inside-out-with-apache-samza/
+
 * CS Technical
 
 ** [[wiki:CS git][CS git]]
@@ -25,3 +35,12 @@
 
 ** [[wiki:CS Erlang and Elixir][CS Erlang and Elixir]]
    Erlang/Elixir memos
+
+** [[wiki:CS Performance(General)][CS Performance(General)]]
+   Performance releated stuff
+
+** [[wiki:CS Networking][CS Networking]]
+   Networking related
+
+** [[wiki:CS Misc][CS Misc]]
+   Various stuff

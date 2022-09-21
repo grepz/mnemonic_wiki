@@ -1,0 +1,29 @@
+#+TITLE: CS Misc
+#+DESCRIPTION:
+#+KEYWORDS:
+#+STARTUP:  content
+
+
+- [[wiki:index][Index]]
+
+- Parent: [[wiki:CS Technical][CS Technical]]
+
+- Related:
+
+* CS Misc
+
+** NGINX
+*** Change error code for upstream and serve custom json
+#+BEGIN_SRC sh
+server {
+...
+location / {
+error_page 503 =202 /gdpr_accepted;
+}
+
+location /gdpr_accepted {
+add_header Retry-After 120 always;
+return 202 '{}';
+}
+}
+#+END_SRC

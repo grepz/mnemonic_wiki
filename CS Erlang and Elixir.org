@@ -11,16 +11,19 @@
 
 - Related:
 
-* CS Erlang and Elixir
-
-** Erlang
-
-*** To read
+* To read
 - [ ] [[https://www.infoq.com/presentations/erlang-overload/][Planning for overload]]
 - [ ] [[https://ferd.ca/erlang-otp-21-s-new-logger.html][New logger in erlang 21]]
 - [ ] [[https://blog.erlang.moe/posts/2019-10-11-hello-world.html][Trace based testing]]
 - [ ] [[https://github.com/inaka/erlang_guidelines][Coding guidelines]]
+- [ ] https://www.amberbit.com/blog/2019/11/18/more-insightful-elixir-logging-with-logger-metadata/
+- [ ] https://stressgrid.com/blog/100k_cps_with_elixir/
 
+* CS Erlang and Elixir
+
+** Erlang
+
+*** Misc
 *** Performance
 *** Logging
 *** Testing
@@ -89,3 +92,151 @@ lists:foldl(fun (Pid, Acc) -> case erlang:process_info(Pid, message_queue_len) o
 ------
 
 ** Elixir
+
+*** Troubleshooting
+**** Show info on queue sizes
+Show processes that has more then 10 messages in their queue right now
+#+BEGIN_SRC elixir
+:erlang.processes |> Enum.reduce([], fn (pid, acc) -> case :erlang.process_info(pid, :message_queue_len) do {_, val} -> case val >= 10 do true -> [{pid, val} | acc]; false -> acc end; :undefined -> acc end end)
+#+END_SRC
+
+
+**** TOP 15 processes with regards to reductions
+#+BEGIN_SRC elixir
+:erlang.processes() |>
+Enum.reduce([], fn (process, acc) ->
+   info = :erlang.process_info(process)
+   if info != :undefined do
+     [%{reductions: info[:reductions],
+        name: info[:registered_name],
+        current_function: info[:current_function],
+        pid: process} | acc]
+   else
+     acc
+   end
+end) |> Enum.sort(&(&1[:reductions] >= &2[:reductions])) |> Enum.take(15)
+#+END_SRC
+
+
+**** Reductions/context switches measure
+#+BEGIN_SRC elixir
+defmodule PingPong do
+  def test(n, m) do
+    parent = self()
+    spawn fn ->
+      s = :erlang.monotonic_time(:microsecond)
+      {cs1,_} = :erlang.statistics(:context_switches)
+      {r1, _} = :erlang.statistics(:reductions)
+
+      first = self()
+      last = start(first, n, m)
+      send first, :ping
+      ping(last, m)
+      cost = :erlang.monotonic_time(:microsecond) - s
+      IO.puts "#{n} processes, #{m} messages, cost #{cost} us."
+      {cs2,_} = :erlang.statistics(:context_switches)
+      {r2, _} = :erlang.statistics(:reductions)
+      IO.puts "Context switch: #{cs2-cs1}, reductions: #{r2-r1}."
+
+      send parent, :done
+    end
+
+    receive do
+      :done ->
+        :ok
+    end
+  end
+
+  defp ping(_pid, 0), do: :ok
+  defp ping(pid, m) do
+    receive do
+      :ping ->
+        send pid, :ping
+        ping(pid, m-1)
+      _other ->
+        ping(pid, m)
+    end
+  end
+
+  defp start(pid, 0, _m), do: pid
+  defp start(pid, n, m) when n>0 do
+    p = spawn fn->
+      ping(pid, m)
+    end
+    start(p, n-1, m)
+  end
+
+end
+#+END_SRC
+
+**** Measure function call
+#+BEGIN_SRC elixir
+measure = fn (f) -> f |> :timer.tc |> elem(0) |> Kernel./(1_000_000) end
+measure.(fn -> repo.transaction(fn -> repo.query!("LOCK TABLE catalog IN EXCLUSIVE MODE NOWAIT"); DepotModel.API.Namespaces.all end) end)
+#+END_SRC
+
+
+*** Misc
+**** Transform pid string into pid
+#+BEGIN_SRC elixir
+pid = pid("0.1972.0")
+#+END_SRC
+
+**** Calculate FNV hash
+#+BEGIN_SRC elixir
+max = 1000000
+
+seq = 1..max
+
+
+pack_int32 =
+fn (bin, int) ->
+  <<bin::binary, int::32>>
+end
+
+fun =
+fn (val, acc) ->
+  bitstr = [Enum.random(1..val), Enum.random(val..max)] |> Enum.sort |>
+    Enum.reduce(<<>>, &(pack_int32.(&2, &1)))
+  hash = FNV.FNV1a.hash64(bitstr)
+  case acc[hash] do
+    nil -> Map.put(acc, hash, [bitstr])
+    clash ->
+      if clash == bitstr do
+        IO.inspect("Whoops:#{clash}!=#{bitstr}!")
+        Map.put(acc, hash, [bitstr | clash])
+      else
+        IO.inspect("Palindrome randome! :), its ok: #{inspect clash}, #{inspect bitstr}")
+        acc
+      end
+  end
+end
+
+
+res = Enum.reduce(seq, %{}, &(fun.(&1, &2)))
+
+Enum.reduce(res, [], fn ({k, v}, acc) ->
+  if length(v) > 1 do
+    [{k, v} | acc]
+  else
+    acc
+  end
+end)
+#+END_SRC
+
+*** Mix
+**** take dependency from local dir
+#+BEGIN_SRC elixir
+def depedencies do
+  [{:testing_dep, path: "/Users/me/testing_dep"}]
+end
+#+END_SRC
+
+*** Logging
+
+**** Print long list
+#+BEGIN_SRC elixir
+IO.inspect(list, limit: :infinity)
+#+END_SRC
+
+*** Performance

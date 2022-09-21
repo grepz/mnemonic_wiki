@@ -10,6 +10,13 @@
 
 - Related:
 
+* To read
+- [ ] https://www.crunchydata.com/blog/postgres-data-flow
+- [ ] https://www.2ndquadrant.com/en/blog/postgresql-12-foreign-keys-and-partitioned-tables/
+- [ ] https://medium.com/geekculture/postgres-brin-index-large-data-performance-with-minimal-storage-4db6b9f64ca4
+- [ ] https://dzone.com/articles/is-your-postgres-query-starved-for-memory
+- [ ] https://pgconf.ru/en/2020/271827
+
 * CS postgres
 
 ** Wipe database data for user
@@ -18,6 +25,11 @@ DROP owned BY <user>;
 #+END_SRC
 
 ** Performance
+
+*** Get info on postgres ops
+#+BEGIN_SRC sql
+SELECT * FROM pg_stat_statements ORDER BY max_time DESC LIMIT 5;
+#+END_SRC
 
 *** Check query performance
 #+BEGIN_SRC sql

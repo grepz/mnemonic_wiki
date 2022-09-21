@@ -1,0 +1,18 @@
+#+TITLE: CS Performance(General)
+#+DESCRIPTION:
+#+KEYWORDS:
+#+STARTUP:  content
+
+
+- [[wiki:index][Index]]
+
+- Parent: [[wiki:CS Technical][CS Technical]]
+
+- Related:
+
+* To read
+- [ ] https://accu.org/journals/overload/23/130/schmidt_2185/
+- [ ] https://jvns.ca/blog/2016/12/03/how-much-memory-is-my-process-using-/
+- [ ] https://missing.csail.mit.edu/
+
+* CS Performance(General)

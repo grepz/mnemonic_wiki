@@ -10,4 +10,7 @@
 
 - Related: 
 
+* To read
+- [ ] https://blog.cloudflare.com/building-fast-interpreters-in-rust/
+
 * CS Rust

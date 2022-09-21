@@ -1,0 +1,203 @@
+#+TITLE: CS Networking
+#+DESCRIPTION:
+#+KEYWORDS:
+#+STARTUP:  content
+
+
+- [[wiki:index][Index]]
+
+- Parent: [[wiki:CS Technical][CS Technical]]
+
+- Related:
+
+* To read [0/12]
+- [ ] https://www.ctrl.blog/entry/resolvconf-tutorial
+- [ ] https://hackertarget.com/wireshark-tutorial-and-cheat-sheet/
+- [ ] https://blog.cloudflare.com/syn-packet-handling-in-the-wild/
+- [ ] http://veithen.io/2014/01/01/how-tcp-backlog-works-in-linux.html
+- [ ] https://www.linuxjournal.com/content/queueing-linux-network-stack
+- [ ] https://habr.com/ru/post/331720/
+- [ ] https://www.cubrid.org/blog/understanding-tcp-ip-network-stack
+- [ ] http://veithen.io/2014/01/01/how-tcp-backlog-works-in-linux.html
+- [ ] https://blog.cloudflare.com/syn-packet-handling-in-the-wild/
+- [ ] https://stressgrid.com/blog/100k_cps_with_elixir/
+- [ ] https://perfchron.com/2015/12/26/investigating-linux-network-issues-with-netstat-and-nstat/
+- [ ] https://confluence.wargaming.net/pages/viewpage.action?pageId=656311570
+
+* CS Networking
+
+** SSH
+*** Tunneling
+**** Using SOCKS5 proxy on browser side
+#+BEGIN_SRC sh
+ssh -fND 127.0.0.1:<local port> username@sshserver
+#+END_SRC
+
+**** Simple tunnel
+#+BEGIN_SRC sh
+# Bind remote port 88 to local 2025 where 88 is a proxy server(squid/nginx/...)
+ssh -N -p 8022 bob@mylinuxserver.xxx -L 2110:localhost:110 -L 2025:localhost:88
+#+END_SRC
+**** Using sshuttle application
+#+BEGIN_SRC
+sudo sshuttle -vvv --dns -r grepz@eterhost.org:8022 0/0 --ssh-cmd 'ssh -i /home/grepz/.ssh/id_rsa'
+#+END_SRC
+
+** Receipts
+*** Print sorted peers for dedicated source port(dport for restination)
+#+BEGIN_SRC sh
+ss -tan 'sport = :80' | awk '{print $(NF)" "$(NF-1)}' | \
+      sed 's/:[^ ]*//g' | sort | uniq -c
+#+END_SRC
+*** Use iptables to drop with certain probability network packets:
+#+BEGIN_SRC sh
+#!/usr/bin/env sh
+
+if [ -z $IPTABLES ]; then
+    IPTABLES=/usr/sbin/iptables
+fi
+IPTABLES_DEFAULT_ACTION=DROP
+
+SCRIPT_ACTION=$1
+IPTABLES_TABLE=$2
+SERVICE_HOSTS_ARGS=$3
+DROP_PROBABILITY=$4
+
+if [ -z $SERVICE_HOSTS_ARGS ] || [ -z $SCRIPT_ACTION ] || [ -z $IPTABLES_TABLE ]; then
+    echo "ERROR: Script parameters are not set correctly $0 <action> <table> <host1,host2,hostN> [drop_probability]"
+    exit 1
+fi
+
+if [ -z $DROP_PROBABILITY ]; then
+    DROP_PROBABILITY=1.0
+fi
+
+if [ $IPTABLES_TABLE == "OUTPUT" ]; then
+    FLAG="-d"
+elif [ $IPTABLES_TABLE == "INPUT" ]; then
+    FLAG="-s"
+fi
+
+SERVICE_HOSTS=$(echo $SERVICE_HOSTS_ARGS | tr "," "\n")
+
+for SERVICE_HOST in $SERVICE_HOSTS
+do
+    echo "Running action $SCRIPT_ACTION for host $SERVICE_HOST"
+
+    case $SCRIPT_ACTION in
+        "SET")
+            $IPTABLES -I $IPTABLES_TABLE -m statistic --mode random --probability $DROP_PROBABILITY $FLAG $SERVICE_HOST -j $IPTABLES_DEFAULT_ACTION
+            ;;
+        "UNSET")
+            $IPTABLES -D $IPTABLES_TABLE -m statistic --mode random --probability $DROP_PROBABILITY $FLAG $SERVICE_HOST -j $IPTABLES_DEFAULT_ACTION
+    esac
+done
+#+END_SRC
+
+*** Show summary on sockets opened on host
+#+BEGIN_SRC sh
+root@depot:~# ss -s
+Total: 104
+TCP:   16 (estab 6, closed 2, orphaned 0, timewait 2)
+
+Transport Total     IP        IPv6
+RAW   0         0         0
+UDP   3         2         1
+TCP   14        9         5
+INET   17        11        6
+FRAG   0         0         0
+#+END_SRC
+
+*** Show events happening with sockets in real time
+#+BEGIN_SRC sh
+root@depot:~# ss -E
+Netid       State       Recv-Q        Send-Q               Local Address:Port                Peer Address:Port
+udp         ESTAB       0             -1                       127.0.0.1:40440                  127.0.0.1:15672
+udp         ESTAB       0             -1                           [::1]:55347                      [::1]:15672
+tcp         UNCONN       0            3                                *:54278                      [::1]:*
+tcp         UNCONN       1            0                        127.0.0.1:15672                  127.0.0.1:36852
+tcp         UNCONN       0            0                        127.0.0.1:36852                  127.0.0.1:15672
+tcp        UNCONN      1           0                [::ffff:127.0.1.1]:epmd             [::ffff:127.0.0.1]:50679
+tcp        UNCONN      0           0                         127.0.0.1:50679                     127.0.1.1:epmd
+tcp        UNCONN      0           0                           0.0.0.0:*                           0.0.0.0:*
+udp        UNCONN      0           -1                          0.0.0.0:49761                       0.0.0.0:*
+udp        UNCONN      0           -1                          0.0.0.0:41128                       0.0.0.0:*
+tcp        UNCONN      0           0                           0.0.0.0:42913                       0.0.0.0:*
+tcp        UNCONN      1           0                         127.0.0.1:48919                     127.0.0.1:epmd
+tcp        UNCONN      0           0                [::ffff:127.0.0.1]:epmd             [::ffff:127.0.0.1]:48919
+#+END_SRC
+
+*** Show info on all TCP sockets which source port is 15672
+#+BEGIN_SRC sh
+root@depot:~# ss -nlemp -t  '( sport = 15672 )'
+State          Recv-Q         Send-Q                  Local Address:Port                    Peer Address:Port
+LISTEN         0              128                           0.0.0.0:15672                        0.0.0.0:*             users:(("beam.smp",pid=14479,fd=77)) uid:109 ino:760055 sk:6b <->
+skmem:(r0,rb87380,t0,tb16384,f0,w0,o0,bl0,d0)
+#+END_SRC
+
+** Netowrk course
+*** Week 1
+
+**** Protocol layers
+As an example we use HTTP for web browsing, protocols are stacked as follows:
+1. Ethernet protocol: local area network packets transmission
+2. IP protocol: Internet protocol which deals with addressing across wide area network.
+3. TCP protocol: which stands for transmission control and reliability of sending/receiving packets
+4. HTTTP: which operates with hyper text messaging, handling headers and payload for web requests/responses
+
+**** TCP/IP model/stack
+4. Application layer: represents data to the user, encoding and dialog control
+   HTTP protocol: HTML transfering
+3. Transport layer: communication between devices across various networks
+   TCP protocol: reliability for messages
+2. Internet layer: Best path across network
+   IP protocol(IPv4/IPv6), LAN/WAN network addressing
+1. Network access: controls hardware and media that make up network
+   Using ethernet protocol, network card to network card on LAN.
+
+**** OSI
+OSI stands for open system interconnection and it is reference model(with regards to TCP/IP being protocol model). Reference model is to aid in clearer understanding of the functions and purposes necessary for network communications.
+OSI model consists of following layers:
+7. Application
+   End-to-end connectivity between individuals in the human network using data networks
+6. Presentation
+   common representation of the data transferred between application layer services
+5. Session
+   Organize presentation layer dialogue and to manage data exchange
+4. Transport
+   Services to segment, transfer, and reassemble the data for individual communications between the end devices.
+3. Network
+   Services to exchange the individual pieces of data over the network between identified end devices.
+2. Data link
+   Protocol describes methods for exchanging data frames between devices over a common medium.
+1. Physical
+   Describes the mechanical, electrical, functional, and procedural means to activate, maintain, and de-activate physical connections for bit transmission to and from a network device.
+
+
+**** OSI and TCP/IP models comparison
+
+- TCP/IP Application layer compared to Application, Presentation, Session layers oF OSI model, 1 :: 7,6,5
+- TCP/IP Transport layer directly compares to OSI transport layer, 3 :: 4
+- TCP/IP Network layer compares to OSI network layer, 2 :: 3
+- TCP/IP Network access layer compares to Data link and Physical layer of OSI model, 1 :: 1,2
+
+
+**** Ethernet
+MAC addresses and ARP.
+
+*** Week 2
+
+**** IP addreeses classes
+- A class
+First octet is used for network ID, other for host ID
+network range 0-126 for first octet
+- B class
+First 2 octets for network ID, rest 2 for host ID
+network range for 128-191
+- C class
+First 3 octets for network ID, last for host iD
+192-223 range
+- D class
+for multicasting, range is 224-239
+- E class
+range 240-255, for testing
