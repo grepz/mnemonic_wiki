@@ -1,0 +1,13 @@
+#+TITLE: Jeep Cherokee XJ
+#+DESCRIPTION:
+#+KEYWORDS:
+#+STARTUP:  content
+
+
+- [[wiki:index][Index]]
+
+- Prarent: [[wiki:Automotive][Automotive]]
+
+- Related: 
+
+* Jeep Cherokee XJ

@@ -1,0 +1,142 @@
+#+TITLE: BMW F850GS
+#+DESCRIPTION:
+#+KEYWORDS:
+#+OPTIONS: ^:nil
+#+STARTUP:  content
+
+
+- [[wiki:index][Index]]
+
+- Parent: [[wiki:Automotive][Automotive]]
+
+- Related:
+
+* BMW F850GS
+
+** Technical
+
+*** Габариты
+- Длинна: 2305 мм
+- Ширина: 922 мм
+- Высота по ветровику: 1356 мм
+- Высота по седлу: 860 мм
+- Максимально допустимый вес: 445 кг
+- Полезный вес: 216 кг
+
+
+*** VIN
+
+
+*** Шины
+- Штатное давление, перед: 2.2 Бар(один), 2.5 Бар(с грузом)
+- Штатное давление, зад: 2.5 Бар(один), 2.9 Бар(с грузом)
+- Заднее колесо: 150/70 R 17
+- Переднее колесо: 90/90-21
+
+
+*** Расходники и запчасти
+
+**** Свечи
+NGK LMAR8J-9E
+
+**** Воздушный фильтр
+
+**** Масляный фильтр
+
+**** Масло
+- Полный объём: 3.0L
+- API: SJ / JASO MA2
+- Присадки: без молибдена
+- Рекомендуемое: ADVANTEC Ultimate oil
+- Вязкость: SAE 5W-40
+- Объем между min/max: 0.5l
+
+**** Звёзды
+
+**** Цепи
+
+**** Мануалы
+код запчасти: BMW # 01 59 983 1848
+
+**** Лягушка индикации заднего тормоза
+part number: 44655 C0019
+[[file:BMW F850GS/brake_indicator.jpg][file:BMW F850GS/brake_indicator.jpg]]
+
+*** Техническое обслуживание
+
+**** Проверка уровня масла
+- Довести двигатель до рабочей температуры(поездка)
+- Дождаться пока начнёт работать вентилятор и после этого подождать ещё минуту
+- Отключить двигатель
+- Подождать 5 минут.
+- Поместить щуп не вкручивая, масло должно быть между рисками
+
+Разница между min и max == 0.5L
+
+**** Замена масла
+- Моменты затяжки: [[file:BMW F850GS/torques.png][file:BMW F850GS/torques.png]]
+- Киты: You can use this kit which has 4 oil filters + tool + washers you'll need: https://www.beemerboneyard.com/11427721779wck.html (don't forget ADVRIDER discount code for 10% off)
+- Видео: https://www.youtube.com/watch?v=ewvrKSaJGzw
+- NOTE: Подробная инструкция с сайта: https://advrider.com/f/threads/f750gs-f850gs-oil-change.1427911/
+- BMW Recommended Oil: BMW Motorrad ADVANTEC ULTIMATE Original BMW Engine Oil 5W-40 Synthetic Engine Oil (3 Liters).
+
+1 x 16mm OEM Copper Crush Ring (BMW Stock # 07 11 9 963 252) Note: Replace Every Oil Change.
+
+1 x OEM Oil Filter (BMW Stock # 11 42 7 721 779) Note: The Short Oil Filter Is Replaced By A Long Oil Filter During The Running In Check.
+
+Note: As An Alternative You May Choose To Use Any Engine Oil That Meets The Following Standard: SAE 5W-40 API SL/JASO MA2.
+
+1. Remove M16x1.5 Drain Plug Using A T50 Torx Socket And Drain The Oil.
+2. Remove Sealing Ring (Copper Crush Ring).
+3. Remove The M10x1 Oil Filler Plug Using A 5mm Hexagon Socket And Drain The Oil. Note: This Plug Is Directly Above The Main Drain Plug And Must Be Removed To Drain All Of The Engine Oil.
+4. Remove The Oil Filter (Long Oil Filter Wrench BM Stock # 11 4 650)
+Note: The Short Oil Filter Is Replaced By A Long Oil Filter During The Running In Check. (Short Oil Filter Wrench BMW Stock # 11 4 661).
+5. Clean The Oil Filter Sealing Face And Lubricate With Clean Engine Oil.
+6. Install New Oil Filter Using Oil Filter Wrench # 11 4 650 (Torque To 11Nm or 8.11 ft-lb).
+7. Install The M10x1 Oil Filler Plug Using A 5mm Hexagon Socket (Torque To 10Nm or 7.37 ft-lb).
+8. Install The M16x1.5 Drain Plug With New Sealing Ring (Copper Crush Ring) Using A T50 Torx Socket (Torque To 25Nm or 18.43 ft-lb).
+9. Remove The Oil Dipstick And Fill The Engine With Engine Oil (Engine Oil Capacity With Filter Change Is Approximately 3.0 Liters. Engine Oil Capacity Without Filter Change Is Approximately 2.7 Liters).
+10. Install The Oil Dipstick And Run Motorcycle For Approximately 30 Seconds To Allow Oil To Circulate Then Turn Off The Motorcycle And Add Remaining Oil. Remove The Oil Dip To Check The Oil In Accordance With The Owner’s Manual.
+
+Note: (From Owner’s Manual)
+
+- Only Check The Oil Level After A Longer Journey Or When The Engine Is Warm.
+- Wipe The Area Around The Oil Filler Opening Clean.
+- Allow The Engine To Idle Until The Fan Starts Up, Then Allow It To Idle One Minute Longer.
+- Switch Off The Engine.
+- Make Sure Ground Is Level And Firm And Hold Motorcycle At Operating Temperature Vertically (With Center Stand).
+- Wait Five Minutes To Allow Oil To Drain Into The Oil Pan.
+- Remove Oil Level Dipstick And Clean Measuring Range With A Dry Cloth.
+- Fit The Oil Level Dipstick Onto The Oil Filler Opening, However Do Not Screw It In.
+- Remove The Oil Level Dipstick And Check Oil Level (Oil Level Should Be Between The MIN and MAX Marks). Note: Difference Between MIN and MAX Marks Is 0.5 Liters Of Oil.
+- Re-Install The Oil Dipstick When Complete.​
+
+
+How to remove the oil filter without making a mess.
+- Let bike cool off for about an hour.
+- Put a sheet of aluminum foil over and around the catalytic converter.
+- Scrunch the foil to create a trough.
+- Put a catch basin under the foil.
+- Poke a hole in the top and bottom of the oil filter with a nail and a hammer.
+- Wait overnight and most of the oil will be out of the filter. The little that is left there still won't make a mess because it will just drop onto the aluminum foil.​
+Only difference is, we didn't wait overnight just 15 minutes and the oil filter drained into the aluminum foil and down into the reservoir. No oil got on the exhaust or bike.
+
+
+**** Замена/проверка воздушного фильтра
+- Снять крышку топливного бака
+- Отсоединить шланг с креплений
+- Надавить и держать кнопку
+- Снять фильтр потянув вверх
+[[file:BMW F850GS/air_filer_change.png][file:BMW F850GS/air_filer_change.png]]
+
+
+*** Тюнинг
+
+**** Защита
+***** Защита выхлопной
+https://www.wunderlich.de/shop/en/bmw-f-series/f-850-gs/protection/foot-leg-protectors.html
+[[file:BMW F850GS/exhaust_guard.png][file:BMW F850GS/exhaust_guard.png]]
+
+***** Защита рычагов
+https://www.hepco-becker.de/en/meinbike/bmw/f-850-gs-2018/handguardset-black-for-bmw-f-850-gs-2018.html
+[[file:BMW F850GS/handguards.png][file:BMW F850GS/handguards.png]]

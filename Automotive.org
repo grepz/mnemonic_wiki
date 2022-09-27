@@ -9,3 +9,9 @@
 - Related:
 
 * Automotive
+
+** [[wiki:BMW F850GS][BMW F850GS]]
+   BMW F850GS related
+
+** [[wiki:Jeep Cherokee XJ][Jeep Cherokee XJ]]
+   Jeep Cherokee XJ related
