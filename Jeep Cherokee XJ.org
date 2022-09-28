@@ -1,6 +1,7 @@
 #+TITLE: Jeep Cherokee XJ
 #+DESCRIPTION:
 #+KEYWORDS:
+#+OPTIONS: ^:nil
 #+STARTUP:  content
 
 
@@ -8,6 +9,931 @@
 
 - Prarent: [[wiki:Automotive][Automotive]]
 
-- Related: 
+- Related:
 
 * Jeep Cherokee XJ
+
+** Техобслуживание
+*** Список ТО
+|    Дата | Пробег |
+|---------+--------|
+| 2022.01 | 218800 |
+
+*** Спецификация смазок и жидкостей
+- АКПП:
+  - 30RH (3-Speed) (1): Mopar 7176 ATF PLUS
+  - AW4 (4-Speed): Dexron-III/Mercon ATF
+
+
+- Brake Master Cylinder: DOT 3 (SAE J-1703F) Brake Fluid
+- Coolant: 50/50 Ethylene-Glycol & Water Mix
+
+-----------
+- Фильтры
+  - Фильтры двигателя
+    Рекомендация: Mopar Oil Filter OE #05281090 (MO090)
+-----------
+- МКПП
+  - AX-5: SAE 75W-90 API GL-5
+  - AX-15: SAE 75W-90 API GL-5
+-----------
+- Масла
+  -  Моторное масло
+     Диапазон температур окружающей среды
+
+
+     От 0F (-18C) и выше: SAE 10W-30 API SH/CD ECII
+
+
+     От 60F (+16C) и ниже: SAE 5W-30 API SH/CD ECII
+
+  - Масла в мостах
+    - Передний мост (3): SAE (75)80W-90 API GL-5 (MIL-L-2105C)
+    - Задний мост: SAE (75)80W-90 API GL-5 (MIL-L-2105C)
+    - Задний мост 8.25: SAE (75)80W-90 API GL-5 (MIL-L-2105C)
+    - Задний мост с блокировкой
+      (Trac-Lok) (4): SAE 80W-140 API GL-5
+    - Задний мост для буксировки прицепов
+      (Trailer Towing) (5): SAE 75W-140 Synthetic
+
+------------------------
+
+- Гидравлическое сцепление
+  DOT 3 (SAE J-1703F) Brake Fluid
+
+- Рулевой редуктор
+  Multi-Purpose NLGI Grade 2EP
+
+- Насос ГУР(*)
+  Power Steering Fluid
+
+- Раздаточная коробка 231\242
+  Dexron-IIE ATF MPAR ATF+4
+
+- Brake Caliper Bushings
+  GE 661 or DOW 111 Silicone Grease
+
+- Caliper Slide Pins
+  GE 661 or DOW 111 Silicone Grease
+
+- Шаровые опоры
+  Multi-Purpose NLGI Grade 2EP, GC-LB
+
+- Крестовины
+  Multi-Purpose NLGI Grade 2EP, GC-LB
+
+- Рулевые тяги (6)(7)
+  Multi-Purpose NLGI Grade 2EP, GC-LB
+
+- Шарниры (6)(8)
+  Multi-Purpose NLGI Grade 2EP, GC-LB
+
+- Уплотнения
+  Silicone Spray Lubricant
+
+(1) - НЕ ЛИТЬ Dexron-III ATF, вызывает вибрацию сцепления.
+
+
+(2) - SAE 10W-30 SH/CD ECII предпочтительно.
+
+
+(3) - НЕ ИСПОЛЬЗОВАТЬ тяжелые смазки т.к. они препятствуют нормальному сцеплению элементов дифференциала, пользовать только SAE (75)80W-90 lube.
+
+
+(4) - Добавить 4 унции. (118 ml) в Limited-Slip Differential при каждой смнене смазки.
+
+
+(5) - Для автомобилей использующихся при буксировании тяжелых прицепов использовать SAE 75W-140 Synthetic lube.
+NOTE: Перед использованием SAE 75W-140 Synthetic старая смазка должна быть удалена и диф. должен быть промыт МАСЛОМ НА МИНЕРАЛЬНОЙ ОСНОВЕ.Затем влить новую синтетику.
+
+
+(6) - Использовать смазочный шприц НИЗКОГО давления.
+
+
+(7) - Закачивать смазку до "перелива".
+
+
+(8) - Закачивать до раздутия уплотнений.
+
+- Кол-во смазок и жидкостей
+
+  - A/C System R-12 Refrigerant Capacity (жидкость кондиционера)
+    - 1989-90: 36-40 Ozs.=унций=*28.3 грамма
+    - 1991-93
+      - Cherokee 2-Door: 32 Ozs.
+      - Cherokee 4-Door: 38 Ozs.
+    - 1994 (up to 12/93)
+      - Cherokee 2-Door: 32 Ozs.
+      - Cherokee 4-Door: 38 Ozs.
+
+  - A/C System R-134a Refrigerant Capacity (2)
+    - 1994-96 (from 1/94): 32 Ozs.
+
+- Automatic Transmission (3) АКПП
+  - 30RH (3-Speed)
+    - Объем замены:  4.0 Qts. (3.8L)
+    - Заливка с нуля (Dry Fill): 8.75 Qts. (8.2L)
+  - AW4 (4-Speed)
+    - Объем замены: 2.0 Qts. (1.7L)
+    - Заливка с нуля (Dry Fill): 8.5 Qts. (8.0L)
+
+- Cooling System - ОЖ
+  - 2.5L (4): 10.0 Qts. (9.5L)
+  - 4.0L (5): 12.0 Qts. (11.4L)
+
+- Engine Oil (6) - Моторное масло
+  - 2.5L: 4.0 Qts. (3.8L)
+    4кварты=1галлон=1 канистра Мопар
+  - 4.0L: 6.0 Qts. (5.7L)
+
+
+- Manual Transmission (7) МКПП
+  - AX4 (4-Speed AISIN): 7.4 Pts. (3.5L)
+  - T4 (4-Speed Borg-Warner): 3.9 Pts. (1.8L)
+  - AX5 (5-Speed AISIN)
+    - 2.5L (2WD): 7.0 Pts. (3.5L)
+    - 2.5L (4X4): 6.6 Pts. (3.2L)
+  - T5 (5-Speed Borg-Warner): 4.5 Pts. (2.1L)
+  - AX15 (5-Speed AISIN)
+    - 4.0L (2WD): 6.4 Pts. (3.1L)
+    - 4.0L (4X4): 6.5 Pts. (3.15L)
+
+- Transfer Case - Раздаточная коробка
+  - Command-Trac (NV 231): 2.2 Pts. (1.0L)
+  - Selec-Trac (NV 242): 3.0 Pts. (1.4L)
+
+- Drive Axles (7) - Мосты
+  - Front Axle (Model 30)
+    - Command-Trac (Disconnect): 3.76 Pts. (1.65L) с разъединителем
+    - (Disconnect Housing) (8): 5.0 Ozs. (0.15L)
+    - Selec-Trac (Non-Disconnect): 3.13 Pts. (1.5L) обычный
+
+  - Rear Axle
+    - 1989-94 (9): 2.5 Pts. (1.2L)
+    - 1995-96
+      - Model 35 (9): 3.5 Pts. (1.6L)
+      - Крайслер 8-1/4" (9): 4.4 Pts. (2.1L)
+
+(1) - Рекомендованные рассчетные емкости. Всегда используйте щуп для проверки
+уровня.
+
+
+(2) - Use of R-12 in a R-134a system will result in SEVERE DAMAGE
+/рекомендованный тип хладагента/
+
+
+(3) - Общее кол-во может изменяться, проверяйте уровень.
+
+
+(4) - Includes 2.3 qts. (2.2L) for coolant recovery bottle.
+
+
+(5) - Includes 1.0 qt. (0.9L) for coolant recovery bottle.
+\Включая емкость расширительного бачка\
+
+
+(6) - Включая фильтр.
+
+
+(7) - заливать до уровня отверстия.
+
+
+(8) - Добавить 5 унций. до уровня контрольного отверстия.
+
+
+(9) - Если мост с дифференциалом TRAC-LOK, добавить 4 унции присадки
+Limited-Slip , сначала добавляется присадка, потом осн. смазка.
+
+
+
+- Проверенные производители:
+  - MOBIL = MOPAR
+    1. www.mobil1.com
+    2. www.mopar.com
+  - COMMA
+    1. www.commaoil.com
+    2. www.commaoil.com.ua \ru
+
+  - AGIP
+    1. www.agip.ru
+
+  - Liqui moly
+    1. www.Liquimoly.ru
+
+  - CASTROL
+    1. www.castrol.com
+
+- ГУР: STEP UP Power STEERING FLUID
+
+** Пометки
+Технические пометки
+
+*** Serials
+VIN:  1J4FJB8S6SL590368
+
+*** Размеры и характеристики
+- Колесная база : 258 cm
+- Длина : 424 cm
+- Высота : 179 cm
+- Ширина : 162 cm
+- Передние тормоза : Дисковые вентилируемые
+- Задние тормоза : Барабанные
+- Передние шины : 215/75 R15
+- Задние шины :  215/75 R15
+- Снаряженная масса : 1559 kg
+- Соотношение веса и выхода : 8.5 kg/hp
+- Багажник : 1011-2033 L
+- Передняя подвеска : Rigid Axle, coil springs, anti-roll bar
+- Зажняя подвеска : Rigid axle, Leaf Spring, anti-roll bar
+
+*** Характеристики аккумулятора
+- Предполагаемый размер: 278×175×190
+- Ток пуска: 600+ А
+- Ёмкость: 75 A/h
+- Полярность: Прямая [+ -]
+
+*** Engine Bay Fuse Box (PDC)
+Kick Panel Fusebox
+[[file:Jeep Cherokee XJ/fuse_box.png][file:Jeep Cherokee XJ/fuse_box.png]]
+[[file:Jeep Cherokee XJ/fuse_box_descr.png][file:Jeep Cherokee XJ/fuse_box_descr.png]]
+
+*** Troubleshooting
+
+**** Режим самодиагностики
+Для считывания кодов с помощью ключа зажигания, сначала затяните стояночный
+тормоз и установите селектор КПП в положение "Р". Увеличьте обороты двигателя
+примерно до 2500 об/мин и медленно дайте им опуститься до холостых. Также
+кратковременно включите кондиционер, а затем выключите его. Затем, если у Вас
+автоматическая коробка, удерживая ногой тормоз, переведите селектор в каждое
+положение КПП (R, D, и т.д.), а затем верните его обратно в "Р". Это позволит
+компьютеру получить коды неисправностей, которые могут поступить от датчиков,
+контролирующих КПП, обороты двигателя или кондиционер.
+
+
+[[file:Jeep Cherokee XJ/engdiag1mini.jpg][file:Jeep Cherokee XJ/engdiag1mini.jpg]]
+
+
+Доступ к кодам осуществить легко - все, что Вам понадобится - это ключ зажигания.
+
+
+После того, как Вы вставили ключ зажигания, он должен находиться в позиции "LOCK". Поверните ключ в следующее положение, т.е. "OFF" . Теперь самое трудное! Ключ нужно повернуть три раза из положения "OFF"  в положение "ON". Оставьте ключ в положении  "ON" после этих трех включений. Все это нужно выполнить достаточно быстро, в течении 5 секунд.
+
+
+Когда ключ зажигания поворачивается в положение "ON", индикаторы приборной
+панели вспыхивают и раздается звук "динг".
+
+
+Коды диагностики будут отображаться на цифровом индикаторе пробега (если Ваш
+Cherokee имеет таковой) и одновременно отображаться индикатором "Check Engine".
+
+
+Если код "12" должен быть показан, цифра "12" будет показана на индикаторе
+пробега, где обычно показывается километраж. Индикатор "Check Engine" промигает
+следующее:
+
+
+CHECK_ENGINE...пауза...CHECK_ENGINE...CHECK_ENGINE
+
+
+Если будет показываться более одного кода, они будут выдаваться с перерывом 3-4
+секунды. Последний код - 55, код завершения.
+
+| Код | Описанме                                                                                                                                                                                                                                                                                                                   | Зажигает Check-Engine |
+|-----+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------|
+|  11 | Нет сигнала от датчика положения коленвала двигателя.                                                                                                                                                                                                                                                                      |                       |
+|  12 | Аккумуляторная батарея была отсоединена в течение 50 последних включений зажигания. Информация может оказаться полезной при покупке и будет означать, что продавец, вероятно, отключал аккумулятор в попытке сбросить записанные компьютером коды неисправностей.                                                          |                       |
+|  13 | Указывает проблемы с датчиком давления (МАР) вакуумной системы. Нет разницы давления с атмосферным.                                                                                                                                                                                                                        |     X                 |
+|  14 | Напряжение c датчика МАР слишком низкое или слишком высокое.                                                                                                                                                                                                                                                               |     X                 |
+|  15 | Проблемы с сигналом датчика расстояния/скорости автомобиля.                                                                                                                                                                                                                                                                |     X                 |
+|  16 | Потеря напряжения батареи.                                                                                                                                                                                                                                                                                                 |                       |
+|  17 | Двигатель холодный. Температура охлаждающей жидкости остается ниже нормальной рабочей температуры (проверьте термостат).                                                                                                                                                                                                   |                       |
+|  21 | Проблемы с цепью сигнала датчика кислорода. Напряжение датчика к компьютеру не изменяется во времени или изменяется медленнее, чем необходимо.                                                                                                                                                                             |     X                 |
+|  22 | Напряжение датчика температуры охлаждающей жидкости слишком высокое или низкое. Проверьте датчик температуры охлаждающей жидкости.                                                                                                                                                                                         |     X                 |
+|  23 | Напряжение датчика температуры воздуха высокое или низкое. Проверьте датчик.                                                                                                                                                                                                                                               |     X                 |
+|  24 | Напряжение датчика положения дроссельной заслонки (TPS) высокое или низкое или оно не соответствует показаниям датчика MAP.                                                                                                                                                                                                |     X                 |
+|  25 | Неисправен мотор холостого хода. Текущие обороты холостого хода не соответствуют заданным.                                                                                                                                                                                                                                 |     X                 |
+|  27 | Блок управления впрыском топлива или одна из форсунок не отвечает на запросы контроллера                                                                                                                                                                                                                                   |                       |
+|  31 | Проблема с цепью соленоида очистки емкости системы испарения.                                                                                                                                                                                                                                                              |     X                 |
+|  32 | Разорвана или закорочена цепь соленоида системы рециркуляции выхлопных газов. Возможно, что разбаланс соотношения воздух/топливо не детектируется при диагностике.                                                                                                                                                         |     X                 |
+|  33 | Цепь реле муфты кондиционера разорвана или закорочена.                                                                                                                                                                                                                                                                     |                       |
+|  34 | Разорваны или закорочены цепи вакуума контроля скорости или соленоида вентиляции (круиз-контроль).                                                                                                                                                                                                                         |                       |
+|  37 | Цепь соленоида муфты преобразователя крутящего момента. Детектируется разрыв или замыкание в цепи соленоида разблокировки части дросселя преобразователя крутящего момента (только автомобили с автоматической КПП производства Крайслер). Либо некорректный сигнал с датчика переключения режимов автоматической коробки. |                       |
+|  41 | Разорвана или закорочена цепь обмотки возбуждения генератора.                                                                                                                                                                                                                                                              |     X                 |
+|  42 | Разорвана или замкнута цепь управления реле АSD (реле автоматического отключения подачи топлива).                                                                                                                                                                                                                          |                       |
+|  43 | Не работает свеча зажигания в в одном или более цилиндров (4 и 6-цилиндровые двигатели)                                                                                                                                                                                                                                    |                       |
+|  44 | Неправильная работа датчика температуры воздуха.                                                                                                                                                                                                                                                                           |                       |
+|  45 | Соленоид повышающей передачи и его цепь.                                                                                                                                                                                                                                                                                   |                       |
+|  46 | Напряжение системы зарядки аккумулятора слишком высокое. Напряжение батареи регулируется неправильно.                                                                                                                                                                                                                      |     X                 |
+|  47 | Напряжение системы зарядки аккумулятора слишком низкое. Напряжение батареи ниже напряжения зарядки при работе двигателя.                                                                                                                                                                                                   |     X                 |
+|  51 | Сигнал с датчика кислорода указывает на обеднение воздушно-топливной смеси при работе двигателя.                                                                                                                                                                                                                           |     X                 |
+|  52 | Сигнал с датчика кислорода указывает на обогащение воздушно-топливной смеси при работе двигателя.                                                                                                                                                                                                                          |     X                 |
+|  53 | Неисправен блок управления автоматической коробкой передач                                                                                                                                                                                                                                                                 |                       |
+|  54 | Нет сигнала датчика положения распредвала в распределителе зажигания.                                                                                                                                                                                                                                                      |                       |
+|  55 | Это код конца сообщений. Завершение выдачи последовательности кодов неисправностей.                                                                                                                                                                                                                                        |                       |
+|  62 | Просрочены сроки регулярного тех.обслуживания системы снижения токсичности.                                                                                                                                                                                                                                                |                       |
+|  66 | Нет сигнала от модуля управления трансмиссией                                                                                                                                                                                                                                                                              |                       |
+|  76 | цепь балластного резистора топливного насоса (если установлен).                                                                                                                                                                                                                                                            |                       |
+|  77 | цепь сервопривода круиз-контроля                                                                                                                                                                                                                                                                                           |                       |
+
+**** TPS testing
+
+The throttle position sensor is connected to the throttle shaft on the throttle
+body. It sends throttle valve angle information to the PCM. The PCM uses this
+information to determine how much fuel the engine needs. The TPS is really just
+a simple potentiometer with one end connected to 5 volts from the PCM and the
+other to ground. A third wire is connected to the PCM. As you move the
+accelerator pedal with your foot, the output of the TPS changes. At a closed
+throttle position, the output of the TPS is low, about a half a volt. As the
+throttle valve opens, the output increases so that, at wide open throttle, the
+output voltage should be above 3.9 volts. Testing can be performed with an
+electrical meter. Analog meter is best. You are looking for a smooth sweep of
+voltage throughout the entire throttle band. While slowly opening and closing
+the throttle, take note to the movement of the voltmeter needle. There should be
+a direct relationship between the needle motion to the motion of the
+throttle. If at anytime the needle moves abruptly or inconsistently with the
+movement of the throttle, the TPS is bad
+
+
+You should have 5 volts going into the TPS. At idle, TPS output voltage must be
+greater than 200 millivolts. At wide open throttle (WOT), TPS output voltage
+must be less than 4.8 volts.. The best is to use an analog meter (not digital)
+to see if the transition from idle to WOT is smooth with no dead spots. With
+your meter set for volts, put the black probe on a good ground like your
+negative battery terminal. With the key on, engine not running, test with the
+red probe of your meter (install a paper clip into the back of the plug of the
+TPS) to see which wire has the 5 volts. One of the other wires should show .26V
+(or so). The other wire will be the ground and should show no voltage. Move the
+throttle and look for smooth meter response up to the 4.49 at WOT.
+
+
+Perform the test procedure again and wiggle and/or tap on the TPS while you
+watch the meter. If you notice any flat spots or abrupt changes in the meter
+readings, replace the TPS.
+
+
+The TPS is sensitive to heat, moisture and vibration leading to the failure of
+some units. The sensor is a sealed unit and cannot be repaired only replaced. A
+TPS may fail gradually leading to a number of symptoms which can include one or
+more of the following: -
+
+
+NOTE: The throttle position sensor is also DIRECTLY involved with transmission
+shifting characteristics! It should be verified early in the troubleshooting
+process, when a transmission issue is suspected!
+
+
+**** Rough idle
+These are 4 parts that seem to be often be culprits of poorly running XJ's:
+1. IAC motor (Idle Air Control): Unstable idle, idle too low, too high
+2. TPS (Throttle Position Sensor): All sorts of drivability problems, bad trans
+   shifts, cutting out on acceleration, slow idle return, no idle, unstable
+   idle...
+3. CPK (Crank Position Sensor): No spark, intermittent spark
+4. MAP sensor (Manifold Air Pressure): Mixture too rich or lean
+
+
+**** No start checklist
+
+
+***** NOT CRANKING
+1. Check battery voltage (12V)
+2. Clean/tighten battery terminals. (Loose and/or corroded?)
+3. Check Gear Selector (Make sure you're in Park)
+4. Neutral Safety Switch (Try to start in Neutral, not Park)
+5. Check grounds
+6. Is starter getting power? (With the key in the ON position, check for
+   approximately full battery voltage at the starter.)
+7. Starter (Hit with hammer)
+8. Starter (Jump with screwdriver. Connect 2 highest bolts. 1 small. 1 big)
+9. Starter Motor Fuse #19 (Kick panel: Fuse #19 (10A red))
+10. Starter Motor Fuse #10 (Engine Bay Fuse Box (PDC). Fuse #10. See diagrams)
+11. Starter Motor Relay (Engine Bay Fuse Box (PDC). “Cube” relay at end of fusebox)
+12. Ignition Switch (Turn on the blower motor fan on for your heater with your
+    key in the 'run' position. Turn the key to the 'start' position... the fan
+    should turn off as it trys to crank over, indicating a good ignition
+    switch.)
+
+
+***** CRANKS, BUT NO START
+1. Is gas tank empty?
+2. Fuel pressure. 48psi (+/- 5psi). Listen for Fuel Pump?
+3. Fuel pump relay (Engine Bay Fuse Box (PDC). Fuse #22. See diagrams)
+4. Ignition fuse (Kick panel: Fuse #11 (20A))
+5. Check for spark.
+6. Bad spark plugs?
+7. Bad Distributor, Cap, Wires?
+8. Crank Position Sensor (CPS)
+9. Bad coil pack?
+10. Bad ECU?
+11. Testing the TPS
+12. IAC, TPS, CPK, MAP Failure Symptoms
+
+
+
+** Запчасти
+
+*** Разное
+- Пин двери
+
+*** Датчики
+- Датчик давления масла
+  Oil pressure switch OE - NUMBER 5149064AB. https://www.autodoc.lt/ridex/14347174
+
+*** Мосты
+[[file:Jeep Cherokee XJ/axles.png][file:Jeep Cherokee XJ/axles.png]]
+
+*** Кардан
+[[file:Jeep Cherokee XJ/cardan.png][file:Jeep Cherokee XJ/cardan.png]]
+
+** Issues
+
+*** Overheating
+
+Overheating? Ok. READ ME:
+
+
+Were going into spring in the northern hemisphere and this page will soon be
+cluster bombed with posts about it. So... We're gonna try and get ahead of it
+now. Here we go.
+
+
+First. Just like my other 2 stickys. DON'T USE THE THROW SHIT AT THE WALL AND
+SEE WHAT STICKS METHOD. DON'T SHOTGUN IT WITH PARTS AND THEN SHOW UP HERE SAYING
+I REPLACED EVERYTHING BETWEEN THE BUMPERS AND IT STILL OVERHEATS.
+
+
+NO. CHANGING THE CRANKSHAFT POSITION SENSOR WON'T FIX IT. DAMMIT.
+
+
+Let's look at some basics first. Remember you're starting with a vehicle which
+is now 21 years old at the minimum and with a cooling system that was barely
+adequate when the jeep was new. This is compounded by the fact that xjs are
+programmed to run lean from the factory which is going to make them want to run
+warmer. If you have an automatic then your radiator does double duty as a trans
+cooler as well. The factory thermostat is 195°. The electric fan is set to turn
+on at 220°. In reality the electric fan will start at 216-225° because the fan
+switch is by no means a finely tuned presicion instrument.
+
+
+Let's start with the simple stuff that only requires hands and eyeballs. Check
+the overflow bottle, coolant should at least be at the full cold mark. Pop the
+cap off of the radiator, the radiator should also be full. Look at the cap - are
+the seals intact? Is it a 16 lb cap? It should be. Now push on the spring loaded
+part, there should be a fair amount of tension. If the cap is less then 16#, or
+the seals look like shit, or it has no spring tension left then go get a
+cap. They're <$5. Is the coolant the right color? (we'll assume green) if it
+looks like diarrhea then you have problems and need to flush your cooling
+system. Is it dirty green? If so then you might wanna think about changing it.
+
+
+Next, look for leaks. Check the weep hole behind the water pump pulley, check
+every hose connection. While your under there, grab ahold of the lower rad hose
+and squeeze it, you should feel the spring inside the hose. If theres no spring
+then go get a lower hose that has one. That spring keeps the lower rad hose from
+getting sucked shut by the water pump. Got leaks? Fix em.
+
+
+Next, take a flashlight and start shining it through the radiator. You should be
+able to see light through the fins on the other side. Make sure the fins aren't
+rolled over. Make sure all the fins are there. If you can't see light then your
+radiator or ac condenser might be at least partially (if not fully)
+blocked. Clean or replace the radiator and/or ac condenser. If you wheel or play
+in mud then taking a hose to the rad should be done frequently.
+
+
+Next, are you running a fan shroud on your mechanical fan? If not - go get
+one. Grab ahold of the fan blade, wiggle it. There should be no play. Try and
+spin it. There should be resistance. Eg: fling it and you should get no more
+than a half a turn before it stops. If it's loose or spins easily then you might
+be looking at a bad fan clutch. We'll get to the electric fan in a minute.
+
+
+If this overheating is combined with your jeep running like crap then it's
+probably not a bad idea to pull all the spark plugs and check the pistons. Shine
+a light down the spark plug hole and look at the top of the piston. If you have
+a piston(s) that looks clean then you just might be looking at a bad head gasket
+or a cracked cylinder head. I won't go super into depth about the cracked
+cylinder head other than to say the 99-01-1/2 0331 heads are well known to
+crack. Other signs of a bad head hasket are white smoke out the tailpipe, engine
+oil that looks like diarrhea, and/or your cooling system boiling over. Next,
+Grab a hold of the mechanical fan blade and spin it by hand. Even with a cold
+engine there should be some resistance if you try to turn it.
+
+
+If your radiator and overflow are full and everything above is good then we go
+to step 2. Before we do. Make sure you have at least a 50/50 mix of antifreeze
+and water. For those of you not in canadia or yankee land (southerners) you can
+stretch that down to 30/70. DO NOT RUN STRAIGHT WATER. Antifreeze does have rust
+inhibitors in it.
+
+
+*This is alot easier if you have working heat. If you don't then go read my
+other sticky about no heat.*
+
+
+Protip: don't trust the temp gauge on the cluster. What were about to do is test
+both the thermostat and the accuracy of the gauge.
+
+
+The parts store sells thermometers, or grab your meat thermometer (just remember
+to clean the son of a bitch off before you use it on meat again). The parts
+store also sells non contact laser thermometers. Get one. Have at least a half a
+gallon of pre mixed coolant next to you.
+
+
+Pop the radiator cap, leave it off, cold start, let it idle with the heat on
+vent, roll the window down and close the door. <the point of this last sentence
+is so you can put your hand in front of the vent and check that you have
+heat. Don't touch the throttle. Let it warm up on its own.
+
+
+It's gonna dribble some coolant out with the cap off. This is normal, you're
+seeing thermal expansion of the coolant as it heats up. Grab the upper rad hose
+at the thermostat housing while the jeep is heating up, it should be starting to
+warm up. Grab it at the radiator, should be pretty cold. Check the vent -
+starting to get heat? Check the temp gauge on the dash too - starting to come
+up?
+
+
+Were going to assume a 195 Stat here for a minute... As the engine approaches
+160ish you'll feel the upper rad hose getting progressively warmer. This is
+telling you the thermostat is starting to open up. Check the coolant temp both
+with your non contact thermometer, shoot the thermostat housing with the non
+contact and check it against the gauge. Once you start seeing temps around 180
+then just keep an eye on the non contact at the t Stat housing and dash
+gauge. Ideally you'll see a little extra drippage out of the radiator fill and
+the coolant should be hot. Less than ideally is you get a geyser. Either way -
+stay away from the radiator fill for now. Once the thermostat is fully open
+you'll see steam coming off the coolant. Both your gauge and non contact should
+be reading 195 +/-5 ideally and you should have good heat. Now shoot the upper
+rad hose from the t Stat housing to the radiator. If the Stat is open that hose
+is gonna be hot for its whole length. Maybe you just figured out that your gauge
+says 230 and it doesn't overheat at all....
+
+
+Shut the jeep off. There's a good to excellent chance that you will end up with
+a geyser if you continue to allow it to run with no cap.
+
+
+Here's why - remember when i said you need a 16 lb cap?
+
+
+Water boils at 212°. If you increase the pressure then that water boils at a
+higher temperature. If you lower the pressure then it'll boil at a lower
+temperature. If you're at, let's say 200° now with the cap off then the coolant
+will boil shortly. That's when you're going to get that geyser. It's not
+necessarily overheating. It's thermodynamics. This is also why you don't ever
+remove a radiator cap off of a hot engine. If that coolant is at 230° under
+pressure and you pop the cap then all 2.5 gallons of that now superheated
+coolant is going to boil instantaneously and you're in the way.
+
+
+Jeep off. Check the gauge, temp at the stat housing, thermometer in the coolant
+at the fill (the thermometer isn't absolutely necessary, but it is another point
+of reference)
+
+
+From cold start to this point should take less than 10 minutes. If it takes
+excessively long then your thermostat might be stuck open.
+
+
+If the motor heats up real quick and the coolant is cold then your thermostat
+might be stuck closed. What, we just did here is test when and if the thermostat
+works. We also just figured out if the dash gauge is accurate.
+
+
+The point here is to figure it out without overheating the shit out of it.
+
+
+Top the coolant off. Cap on. Jeep is near or at operating temp.
+
+
+This is where things get not so clear cut. Assuming we made it this far -
+coolant is good, radiator fins aren't blocked, stat works as it should, no
+leaks.
+
+
+Now. Does it overheat sitting there? Or does it overheat when you drive? Or does
+it only overheat when it's under a heavy load (up a big hill, dragging a
+trailer, offroading at 82000 rpm in 4lo)? Or all of the above?
+
+
+Let's clear up this electric fan issue now. It seems to be a never ending source
+of confusion. The mechanical fan is supposed to - in an ideal world - be capable
+of maintaining the correct airflow by itself. The electric fan is there 1. To
+remove additional heat when the ac runs and 2. Remove additional heat before you
+find yourself in an overheating condition (220°+) on 91+ xjs the electric fan
+relay is controlled by the pcm. The pcm is fed coolant temp info from the sensor
+on the thermostat housing. If you unplug the coolant temp sensor then the fan
+should run by default because the pcm turns it on. SHOULD. Keep in mind that
+normal operating temperature is 195-215°. If the temp gauge is dead center or
+even a little to the right of dead center then its not overheating. I don't care
+if your butthole puckers when the needle goes a needles width past half. It's
+still not overheating. (this is provided your gauge is correct but remember, we
+just determined that).
+
+
+
+Let's test the fan...
+
+
+Fire the jeep up. Let it idle. Turn the ac on. On a 99 or older - the fan should
+come on. On 00 and 01 the fan is tied into the ac high pressure switch and will
+only come on if the ac high side pressure exceeds 300psi. So if your ac is inop
+on a 00 or 01 you can't test the fan. For the rest of us - a/c relay on = fan
+on. I'll post a link for electrical diag below if your fan won't
+run. Next. Shoot the thermostat housing. If the temp at the thermostat housing
+does not go above 217-225 then the electric fan won't run. If the engine temp
+won't exceed 217-225 at idle then it's not overheating at idle.
+
+
+If you want a quick test for the fan then pull the relay and jump pins 30
+and 87. The fan should run. If it doesn't then you have a wiring problem, no
+power, or a bad fan. Again, see the link below. I could easily make this whole
+writeup about the electric fan...
+
+
+Again. This is where things get not so clear cut. Remember. We're dealing with
+components that are at a minimum 21 years old.
+
+
+With your jeep running at idle, ac off, heat off and at operating temp - grab
+ahold of the throttle and rev it up. That mechanical fan should be pulling a
+metric shitload of air. As in rev it up and you should have hurricane force wind
+behind it. After the jeep has been idling at temp for 5-10 minutes then shut it
+off. Grab the fan blade and try to turn it. It should be very difficult to turn
+if it turns at all. If the mechanical fan turns as easily as it did when the
+jeep was cold then the fan clutch is bad. Time for a fan clutch.
+
+
+In a perfect world the thermostat would control the engine temp. But this isn't
+a perfect world.
+
+
+The reality is the cooling system in an xj is adequate at best and undersized at
+worst. In an ideal world your cooling fan would only really be needed at low
+speed or when stopped. Because airflow through the radiator above 25 mph should
+be more than adequate to keep the radiator - and therefore your engine -
+happy. This is why mechanical cooling fans have clutches. At a stop or at low
+speed when you don't have any airflow is when the clutch fan is needed to pull
+air through the radiator. Once you get moving that airflow through the grill
+will cool off. The cooler air will allow the fan clutch to disengage so the fan
+can free wheel. This is important because any cooling fan will pose a flow
+restriction if it's running when the vehicle is being driven at speed. 60 mph
+worth of air through a radiator is far more air than a fan can pull.
+
+
+Now let's talk about the things we can't see.
+
+
+Water pumps, inside the radiator, coolant passages.
+
+
+Just because a water pump isn't leaking doesn't mean it isn't bad. Impellers on
+water pumps are subject to wear and erosion. Erosion will definitely limit
+coolant flow. If your jeep overheats all the time, be it driving or sitting
+still, then I'd look at the pump.
+
+
+Same thing applies to the radiator. Just because it isn't leaking doesn't mean
+it isn't bad. How many of you have had heating issues and back flushed your
+heater core only to get a shitload of sludge out of it?
+
+
+If it's in your heater core then it's in the rest of your cooling system too. I
+promise. All those tubes in your radiator are equally as good at catching
+sludge. Remember. The radiator is smaller than it should be. If you have tubes
+blocked then your radiator is even smaller yet.
+
+
+You won't know if the coolant passages inside your engine are blocked without
+pulling the engine apart. However. If you've had heater core issues and your
+jeep already runs warm then go ahead and assume the coolant passages are
+partially blocked.
+
+
+Here's how you clean your whole cooling system:
+1. Drain all of the coolant.
+2. Remove the thermostat, reinstall the housing
+3. Fill with hose water.
+4. Run jeep for 10 minutes with heat on full blast.
+5. Drain all of the water.
+6. Dissolve 2 cups of cascade powdered dishwasher detergent in a gallon of hot water. DO NOT USE LIQUID SOAP OF ANY KIND. Cascade Wont foam.
+7. Dump gallon of cascade water in cooling system. Fill with hose. Don't forget the overflow.
+8. Cap it. Drive it for a couple days
+9. Pull the lower rad hose off the radiator and see how much shit comes out. If it's alot then consider doing a second treatment.
+10. Fill with water. Run it with the heat on full blast.
+11. Dump it.
+12. Repeat step 10.
+13 repeat step 11.
+14. Install thermostat.
+15 fill with distilled water and coolant.
+
+
+Now. Our shit still overheats. So we have to replace parts. What do we use?
+
+
+-water pumps were redesigned in 1999 with better impellers. Run a 99+ water
+pump. Or run a flowkooler water pump. Don't buy reman. Only new.
+
+
+- fan clutches for a zj are an upgrade for an xj and are a direct swap.
+- electric fans were redesigned for 97 and up. And flow significantly more air than 96 and down. They are also a direct swap.
+- there is a factory HD radiator that came with the tow package. Use it. If not,
+- there's no shortage of 3 row aftermarket radiators out there. Use one of them.
+
+
+Ditch both the factory mech fan and e fan. Run triple electrics. - I did this in
+my 1st xj that perpetually ran hot along with a 3 core rad and a redesigned
+water pump. I grabbed a fan switch for a 90 and older since they trigger the
+fans at 190. I also installed a 3 position switch in the dash. 1 was override
+on. 2 was computer control/radiator mounted 190deg fan switch. And 3 was off for
+when I took the jeep swimming. For the 3 years that I ran it like that I never
+once had to flip the switch to position 1. I sound sit in a highway traffic jam
+in July and those fans would run for 15 seconds tops before they shut off.
+
+
+The a/c was also stupid cold at idle as a result.
+
+
+- you can space the hood at the hinges by stacking washers between the hood and hinge to allow excess hot air to vent out.
+  I personally wouldn't because it'll also let excess water in and there's lots of
+  electrical parts back there.
+- relocate the intake air temp sensor from the intake manifold to the air box.
+  The pcm will see cooler air and fatten up the fuel to compensate. This helps
+  with the engine running lean.
+- they make high flow thermostats. Their 4x the price of a regular
+  thermostat. My experience is they also don't last too long.
+
+
+Lastly. A word about running 180 or 160 degree stats:
+Dont.
+
+
+It's a bullshit fix at best and potentially damaging to your engine at worst.
+
+
+Here's why. A properly operating cooling system with no thermostat will make
+your engine run cold. Like <150° cold. Even colder when you're driving. Ever
+notice when you're sitting in traffic and the gauge starts to creep up? Then you
+start moving and the gauge goes just below 200 and kinda hangs there the whole
+time you drive. That's because the cooling system is doing its job and the
+thermostat is partially or fully closed. The thermostat is restricting coolant
+flow to keep the engine at operating temp.
+
+
+Putting a 160 stat in an overheating jeep is like turning the ac in your house
+down to 55 because it was set to 70 and it's 80 in the house. If the ac is
+broken then turning the thermostat down more isn't going to make it cooler.
+
+
+If your jeep is already overheating then your thermostat should already be wide
+open. If it is then the stat isn't the problem. Something else is. Additionally
+if you run a 160 stat and your cooling system is in fact OK then your engine
+isn't operating at the correct temperature. It's cold. Which means it's probably
+in open loop more than it needs to be and it's dumping way more fuel into the
+engine than the engine needs. All that excess fuel is washing down the cylinder
+walls which is wearing out your engine quicker because the oil control ring on
+your pistons is dealing with gasoline, not oil. It's also gonna eat your
+converter up and dilute your engine oil.
+
+
+If you made it this far and it still overheats then I guess go ahead and replace
+the crankshaft position sensor. I mean. You were gonna do it anyway.
+
+
+Info about electric fan diag look into corresponding page.
+
+
+
+*** Electric fan diagnostics
+
+All MJ sand XJ vehicles equipped with a 4.0L engine that have air-conditioning
+and/or heavy duty cooling are also equipped with an auxiliary electrical
+fan. The fan is controlled by a relay mounted on the left inner fender panel. A
+switch attached to the radiator outlet tank above the radiator lower hose senses
+engine coolant temperature. When coolant temperature is above 190*F (88*C) the
+switch closes allowing current from the ignition switch to flow through the fan
+relay to ground activating the relay. When the relay is activated battery
+voltage is supplied to the fan causing it to operate. When coolant temperature
+is below 190*F (88*C) the switch is open preventing the relay from being
+grounded and the cooling fan from being energized.
+
+
+When the air-conditioning is used the engine ECU grounds the A/C relay coil
+allowing current to flow through it. This activates the A/C relay which then
+supplies current to the A/C clutch, fan diode assembly and cooling fan
+relay. The cooling fan relay is activated and the fan operates. When ever the
+air-conditioning is used, regardless of engine coolant temperature, the
+auxiliary electric cooling fan operates.
+
+*Auxiliary Electric Cooling Fan Removal*
+
+
+The auxiliary fan is attached to the radiator upper crossmember behind the
+radiator.
+
+
+    1. Remove fan retaining screws from radiator upper crossmember (Fig. 41).
+    2. Disconnect the electric fan connector.
+    3. Lift fan straight up out of vehicle.
+
+
+*Auxiliary Cooling Fan Installation*
+
+
+    1. Align lower retaining tabs of fan shroud with slots in bracket at bottom
+       of radiator and push fan down into position.
+    2. Tighten the mounting screws to 4.07 N•m (36 in- lbs).
+    3. Connect auxiliary cooling fan electrical connector.
+
+
+*AUXILIARY ELECTRIC COOLING FAN MOTOR INOPERATIVE. Equipment Required:*
+
+
+    1. Volt/Ohm Meter
+    2. Jumper wire with In-line 25 amp fuse
+    3. Figures 42, 43, and 44.
+
+
+*Test Procedures For Vehicle Equipped With Air Conditioning*
+
+
+*(1) Auxiliary Fan Operation:*
+
+
+    - Remove fan relay which is mounted to left inner fender panel (Fig. 42).
+    - Using a jumper wire with an In-line 25 amp fuse, supply battery voltage to
+      terminal 4 of the relay con- nector (Fig. 43):
+    - If fan operates, the motor is good. Proceed to (2).
+    - If fan motor does NOT operate, check continuity between terminal 4 of the
+      relay connector (Fig. 43) and body ground connections on the fender panel
+      back from the relay connector (Fig. 42). If continuity exists replace the
+      fan motor. If continuity is not found repair open and retest.
+
+
+[[file:Jeep Cherokee XJ/Auxiliary_Fan_Schematic_Fig_42.jpg][file:Jeep Cherokee XJ/Auxiliary_Fan_Schematic_Fig_42.jpg]]
+
+
+*(2) Cooling Fan Relay:*
+
+    - With fan relay removed turn the ignition switch to the RUN position.
+    - Check continuity between terminal 5 of the relay connector (Fig. 43) and
+      the body ground con- nections on the fender panel back from the relay con-
+      nector (Fig. 42). If continuity exists proceed to next step. If continuity
+      is not found repair open.
+    - Using jumper wire with In-line 25 amp fuse, jump across terminals 1 and 4
+      of the relay connector. If the fan motor operates proceed to next step
+      leaving the jumper wire in place. If the fan motor does not operate repair
+      fan relay fuse link. Refer to Wiring diagrams for circuit diagram.
+    - Check for battery voltage at terminal 2 of fan relay connector (Fig. 43).
+    - Connect a jumper wire across the radiator temperature switch harness
+      connector. If fan operates proceed to next step. If fan does not operate
+      replace radiator temperature switch once the engine has cooled down.
+    - Check for battery voltage at terminal 2 of the fan relay connector
+      (Fig. 43). If battery voltage is not present replace the fan diode
+      assembly.
+
+
+
+*Fan Inoperative When Air Conditioning Compressor Operates*
+
+With engine running, A/C on, and fan relay removed, check for battery voltage at
+terminal 2 of fan relay connector (Fig. 43). Replace fan diode assembly
+(Fig. 42) if battery voltage is not present. If battery voltage is not present
+perform (1) and (2) above.
+
+[[file:Jeep Cherokee XJ/Auxiliary_Fan_Relay_Fig_43.jpg][file:Jeep Cherokee XJ/Auxiliary_Fan_Relay_Fig_43.jpg]]
+
+*Vehicle Not Equipped With Air Conditioning*
+
+*(1) Auxiliary Fan Operation:*
+
+    - Remove fan relay which is mounted to left inner fender panel (Fig. 44).
+    - Using a jumper wire with an In-line 25 amp fuse, supply battery voltage to
+      terminal 4 of the relay connector (Fig. 43): • If fan operates, the motor
+      is good. Proceed to (2). • If fan motor does not operate, check continuity
+      between terminal 4 of the relay connector (Fig. 43) and body ground
+      connections on the fender panel back from the relay connector
+      (Fig. 44). If continuity exists replace the fan motor. If continuity is
+      not found repair open and retest.
+
+*(2) Cooling Fan Relay:*
+
+    - With fan relay removed turn the ignition switch to the RUN position.
+    - Check continuity between terminal 5 of the relay connector (Fig. 43) and
+      body ground connections on the fender panel back from the relay connector
+      (Fig. 44). If continuity exists proceed to next step. If continuity is not
+      found repair open.
+    - Using jumper wire with In-line 25 amp fuse, jump across terminals 1 and 4
+      of the relay connector (Fig. 43). If the fan motor operates proceed to
+      next step leaving the jumper wire in place. If the fan motor does  not
+      operate repair fan relay fuse link. Refer to Wiring diagrams for circuit
+      diagram.
+    - Check for battery voltage at terminal 2 of fan relay connector (Fig. 43).
+    - Connect a jumper wire across the radiator temperature switch harness
+      connector. If fan operates proceed to next step. If fan does not operate
+      replace radiator temperature switch once the engine has cooled down.
+    - Check for battery voltage at terminal 2 of the fan relay connector
+      (Fig. 43). If battery voltage is not present replace the fan diode
+      assembly.

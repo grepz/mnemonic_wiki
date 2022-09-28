@@ -134,9 +134,14 @@ Only difference is, we didn't wait overnight just 15 minutes and the oil filter 
 
 **** Защита
 ***** Защита выхлопной
-https://www.wunderlich.de/shop/en/bmw-f-series/f-850-gs/protection/foot-leg-protectors.html
-[[file:BMW F850GS/exhaust_guard.png][file:BMW F850GS/exhaust_guard.png]]
+- Wunderlich
+  link: https://www.wunderlich.de/shop/en/bmw-f-series/f-850-gs/protection/foot-leg-protectors.html
+
+  image: [[file:BMW F850GS/exhaust_guard.png][file:BMW F850GS/exhaust_guard.png]]
 
 ***** Защита рычагов
-https://www.hepco-becker.de/en/meinbike/bmw/f-850-gs-2018/handguardset-black-for-bmw-f-850-gs-2018.html
-[[file:BMW F850GS/handguards.png][file:BMW F850GS/handguards.png]]
+- Hepco Becker handguards
+
+  link: https://www.hepco-becker.de/en/meinbike/bmw/f-850-gs-2018/handguardset-black-for-bmw-f-850-gs-2018.html
+
+  image: [[file:BMW F850GS/handguards.png][file:BMW F850GS/handguards.png]]
