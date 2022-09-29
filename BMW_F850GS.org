@@ -1,4 +1,4 @@
-#+TITLE: BMW F850GS
+#+TITLE: BMW_F850GS
 #+DESCRIPTION:
 #+KEYWORDS:
 #+OPTIONS: ^:nil
@@ -11,7 +11,7 @@
 
 - Related:
 
-* BMW F850GS
+* BMW_F850GS
 
 ** Technical
 
@@ -60,7 +60,7 @@ NGK LMAR8J-9E
 
 **** Лягушка индикации заднего тормоза
 part number: 44655 C0019
-[[file:BMW F850GS/brake_indicator.jpg][file:BMW F850GS/brake_indicator.jpg]]
+[[file:BMW_F850GS/brake_indicator.jpg][file:BMW_F850GS/brake_indicator.jpg]]
 
 *** Техническое обслуживание
 
@@ -74,7 +74,7 @@ part number: 44655 C0019
 Разница между min и max == 0.5L
 
 **** Замена масла
-- Моменты затяжки: [[file:BMW F850GS/torques.png][file:BMW F850GS/torques.png]]
+- Моменты затяжки: [[file:BMW_F850GS/torques.png][file:BMW_F850GS/torques.png]]
 - Киты: You can use this kit which has 4 oil filters + tool + washers you'll need: https://www.beemerboneyard.com/11427721779wck.html (don't forget ADVRIDER discount code for 10% off)
 - Видео: https://www.youtube.com/watch?v=ewvrKSaJGzw
 - NOTE: Подробная инструкция с сайта: https://advrider.com/f/threads/f750gs-f850gs-oil-change.1427911/
@@ -127,7 +127,7 @@ Only difference is, we didn't wait overnight just 15 minutes and the oil filter 
 - Отсоединить шланг с креплений
 - Надавить и держать кнопку
 - Снять фильтр потянув вверх
-[[file:BMW F850GS/air_filer_change.png][file:BMW F850GS/air_filer_change.png]]
+[[file:BMW_F850GS/air_filer_change.png][file:BMW_F850GS/air_filer_change.png]]
 
 
 *** Тюнинг
@@ -137,11 +137,11 @@ Only difference is, we didn't wait overnight just 15 minutes and the oil filter 
 - Wunderlich
   link: https://www.wunderlich.de/shop/en/bmw-f-series/f-850-gs/protection/foot-leg-protectors.html
 
-  image: [[file:BMW F850GS/exhaust_guard.png][file:BMW F850GS/exhaust_guard.png]]
+  image: [[file:BMW_F850GS/exhaust_guard.png][file:BMW_F850GS/exhaust_guard.png]]
 
 ***** Защита рычагов
 - Hepco Becker handguards
 
   link: https://www.hepco-becker.de/en/meinbike/bmw/f-850-gs-2018/handguardset-black-for-bmw-f-850-gs-2018.html
 
-  image: [[file:BMW F850GS/handguards.png][file:BMW F850GS/handguards.png]]
+  image: [[file:BMW_F850GS/handguards.png][file:BMW_F850GS/handguards.png]]

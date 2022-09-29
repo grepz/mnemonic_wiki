@@ -1,4 +1,4 @@
-#+TITLE: Jeep Cherokee XJ
+#+TITLE: Jeep_Cherokee_XJ
 #+DESCRIPTION:
 #+KEYWORDS:
 #+OPTIONS: ^:nil
@@ -254,8 +254,8 @@ VIN:  1J4FJB8S6SL590368
 
 *** Engine Bay Fuse Box (PDC)
 Kick Panel Fusebox
-[[file:Jeep Cherokee XJ/fuse_box.png][file:Jeep Cherokee XJ/fuse_box.png]]
-[[file:Jeep Cherokee XJ/fuse_box_descr.png][file:Jeep Cherokee XJ/fuse_box_descr.png]]
+[[file:Jeep_Cherokee_XJ/fuse_box.png][file:Jeep_Cherokee_XJ/fuse_box.png]]
+[[file:Jeep_Cherokee_XJ/fuse_box_descr.png][file:Jeep_Cherokee_XJ/fuse_box_descr.png]]
 
 *** Troubleshooting
 
@@ -270,7 +270,7 @@ Kick Panel Fusebox
 контролирующих КПП, обороты двигателя или кондиционер.
 
 
-[[file:Jeep Cherokee XJ/engdiag1mini.jpg][file:Jeep Cherokee XJ/engdiag1mini.jpg]]
+[[file:Jeep_Cherokee_XJ/engdiag1mini.jpg][file:Jeep_Cherokee_XJ/engdiag1mini.jpg]]
 
 
 Доступ к кодам осуществить легко - все, что Вам понадобится - это ключ зажигания.
@@ -440,10 +440,10 @@ These are 4 parts that seem to be often be culprits of poorly running XJ's:
   Oil pressure switch OE - NUMBER 5149064AB. https://www.autodoc.lt/ridex/14347174
 
 *** Мосты
-[[file:Jeep Cherokee XJ/axles.png][file:Jeep Cherokee XJ/axles.png]]
+[[file:Jeep_Cherokee_XJ/axles.png][file:Jeep_Cherokee_XJ/axles.png]]
 
 *** Кардан
-[[file:Jeep Cherokee XJ/cardan.png][file:Jeep Cherokee XJ/cardan.png]]
+[[file:Jeep_Cherokee_XJ/cardan.png][file:Jeep_Cherokee_XJ/cardan.png]]
 
 ** Issues
 
@@ -872,7 +872,7 @@ radiator.
       fan motor. If continuity is not found repair open and retest.
 
 
-[[file:Jeep Cherokee XJ/Auxiliary_Fan_Schematic_Fig_42.jpg][file:Jeep Cherokee XJ/Auxiliary_Fan_Schematic_Fig_42.jpg]]
+[[file:Jeep_Cherokee_XJ/Auxiliary_Fan_Schematic_Fig_42.jpg][file:Jeep_Cherokee_XJ/Auxiliary_Fan_Schematic_Fig_42.jpg]]
 
 
 *(2) Cooling Fan Relay:*
@@ -903,7 +903,7 @@ terminal 2 of fan relay connector (Fig. 43). Replace fan diode assembly
 (Fig. 42) if battery voltage is not present. If battery voltage is not present
 perform (1) and (2) above.
 
-[[file:Jeep Cherokee XJ/Auxiliary_Fan_Relay_Fig_43.jpg][file:Jeep Cherokee XJ/Auxiliary_Fan_Relay_Fig_43.jpg]]
+[[file:Jeep_Cherokee_XJ/Auxiliary_Fan_Relay_Fig_43.jpg][file:Jeep_Cherokee_XJ/Auxiliary_Fan_Relay_Fig_43.jpg]]
 
 *Vehicle Not Equipped With Air Conditioning*
 
