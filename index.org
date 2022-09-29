@@ -11,3 +11,4 @@
    Motorcycles, automobiles and other stuff that moves
 ** [[wiki:Sport][Sport]]
    Various sports
+** [[wiki:Traveling][Traveling]]

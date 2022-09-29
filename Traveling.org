@@ -1,0 +1,13 @@
+#+TITLE: Traveling
+#+DESCRIPTION:
+#+KEYWORDS:
+#+STARTUP:  content
+
+
+- [[wiki:index][Index]]
+
+- Related: 
+
+* Traveling
+
+** [[wiki:Traveling. Interesting places][Traveling. Interesting places]]

@@ -10,6 +10,9 @@
 
 * Automotive
 
+** [[wiki:Motorcycles][Motorcycles]]
+   General info on motorcycles
+
 ** [[wiki:BMW F850GS][BMW F850GS]]
    BMW F850GS related
 
