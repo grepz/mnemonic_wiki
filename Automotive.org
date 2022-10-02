@@ -14,6 +14,10 @@
 ** [[wiki:Motorcycles][Motorcycles]]
    General info on motorcycles
 
-** [[wiki:BMW_F850GS][BMW_F850GS]]
-** [[wiki:Jeep_Cherokee_XJ][Jeep_Cherokee_XJ]]
-   Jeep Cherokee XJ related
+*** [[wiki:BMW_F850GS][BMW_F850GS]]
+   BMW F850GS motorcycle
+
+** Cars
+
+*** [[wiki:Jeep_Cherokee_XJ][Jeep_Cherokee_XJ]]
+    Jeep Cherokee XJ related
