@@ -175,6 +175,24 @@ measure = fn (f) -> f |> :timer.tc |> elem(0) |> Kernel./(1_000_000) end
 measure.(fn -> repo.transaction(fn -> repo.query!("LOCK TABLE catalog IN EXCLUSIVE MODE NOWAIT"); DepotModel.API.Namespaces.all end) end)
 #+END_SRC
 
+**** Trace call, print out call with certain arguments
+Sometimes it is impossible to set trace pattern narrow enough, so you can use
+print function specification. Take in mind that msgs limitation will by applied
+_before_ function call, so set msgs limiter accordingly.
+#+BEGIN_SRC elixir
+
+Rexbug.start(
+  "MagClients.Depot.call(\"inventory/title\", _, _) :: return",
+  [
+    msgs: 10000,
+    print_fun: fn ({:call, {{_, _, args}, _}, _, _}) ->
+       [_first_arg, filter, _] = args
+       if filter["object_id"] == 38356, do: IO.inspect(args)
+       true
+     (_) ->
+       true
+  end])
+#+END_SRC
 
 *** Misc
 **** Transform pid string into pid
