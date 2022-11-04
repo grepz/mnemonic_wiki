@@ -34,9 +34,9 @@
 - NGK LMAR8J-9E
 
 *** Воздушный фильтр
-
+- HIFLOFILTRO HFA 7801
 *** Масляный фильтр
-
+- MAHLE OC 619
 *** Масло
 - Полный объём: 3.0L
 - API: SJ / JASO MA2
