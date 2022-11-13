@@ -1,0 +1,16 @@
+#+TITLE: Traveling. Отчёты.
+#+DESCRIPTION:
+#+KEYWORDS:
+#+OPTIONS: ^:nil
+#+STARTUP:  content
+#+DATE: 2022-11-06
+
+- [[wiki:index][Index]]
+
+- Parent: [[wiki:Traveling][Traveling]]
+
+- Related:
+
+* Traveling. Отчёты.
+
+** 2022, лето. Путешествие в Стабмул.

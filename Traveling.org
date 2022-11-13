@@ -6,8 +6,9 @@
 
 - [[wiki:index][Index]]
 
-- Related: 
+- Related:
 
 * Traveling
 
 ** [[wiki:Traveling. Interesting places][Traveling. Interesting places]]
+** [[wiki:Traveling. Отчёты.][Traveling. Отчёты.]]
