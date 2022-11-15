@@ -25,6 +25,15 @@
 DROP owned BY <user>;
 #+END_SRC
 
+** Get various sizes
+- Get table size
+#+BEGIN_SRC sql
+SELECT pg_size_pretty( pg_total_relation_size(tablename') );
+#+END_SRC
+- Get database size
+#+BEGIN_SRC sql
+SELECT pg_size_pretty( pg_database_size(‘databname‘) );
+#+END_SRC
 ** Performance
 
 *** Get info on postgres ops
