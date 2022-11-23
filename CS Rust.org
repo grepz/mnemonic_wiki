@@ -12,5 +12,7 @@
 
 * To read
 - [ ] https://blog.cloudflare.com/building-fast-interpreters-in-rust/
+- [X] http://cliffle.com/blog/not-thread-safe/
+- [ ] http://cliffle.com/blog/rust-mutexes/
 
 * CS Rust
