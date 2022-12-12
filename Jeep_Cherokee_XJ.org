@@ -446,6 +446,12 @@ These are 4 parts that seem to be often be culprits of poorly running XJ's:
 *** Кардан
 [[file:Jeep_Cherokee_XJ/cardan.png][file:Jeep_Cherokee_XJ/cardan.png]]
 
+*** Масла
+- Castrol 03081 Edge 10W-30 Advanced Full Synthetic Motor Oil
+- Pennzoil Platinum Full Synthetic 10W-30 Motor Oil
+- Valvoline Advanced Full Synthetic SAE 5W-30 Motor Oil
+- Royal Purple 51530 API-Licensed SAE 5W-30 High Performance Synthetic Motor Oil
+- Mobil 1 10W-30 High Mileage Full Synthetic Motor
 ** Issues
 
 *** Overheating

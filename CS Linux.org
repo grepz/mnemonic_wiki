@@ -38,3 +38,31 @@ diskutil partitionDisk /dev/disk2 1 "Free Space" "unused" "100%"
 #+BEGIN_SRC sh
 dd if=pathToYourOutputFile.dmg of=/dev/disk2 bs=1m
 #+END_SRC
+
+** What processes holds file(FD)
+#+BEGIN_SRC sh
+lsof /path/to/file
+#+END_SRC
+** Resize partition on LVM
+1. Unmount partition
+#+BEGIN_SRC sh
+umount /home
+#+END_SRC
+2. Shrink choosen partition
+#+BEGIN_SRC sh
+# Run fs check beforehand
+e2fsck -f /dev/mapper/vg_test-lv_home
+# actual resize
+resize2fs /dev/mapper/vg_test-lv_home 20G
+# Reduce LVM to 20G
+lvreduce -L 20G /dev/mapper/vg_test-lv_home
+#+END_SRC
+3. Extend choosen partition with space freed
+#+BEGIN_SRC sh
+lvextend -l +100%FREE /dev/mapper/vg_test-lv_root
+resize2fs /dev/mapper/vg_test-lv_root
+#+END_SRC
+4. Mount partition back
+#+BEGIN_SRC sh
+mount /home
+#+END_SRC

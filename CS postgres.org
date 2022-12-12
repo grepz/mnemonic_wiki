@@ -208,3 +208,8 @@ $$ LANGUAGE plpgsql;
 #+BEGIN_SRC sql
 SELECT root_object_id, COUNT(id) FROM transaction_details_0 GROUP BY root_object_id;
 #+END_SRC
+
+*** Get non-empty arrays
+#+BEGIN_SRC sql
+SELECT tags FROM item WHERE array_length(tags, 1) != 0;
+#+END_SRC
