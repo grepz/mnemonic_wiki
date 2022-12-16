@@ -213,3 +213,8 @@ SELECT root_object_id, COUNT(id) FROM transaction_details_0 GROUP BY root_object
 #+BEGIN_SRC sql
 SELECT tags FROM item WHERE array_length(tags, 1) != 0;
 #+END_SRC
+
+*** Check if arrays overlaps
+#+BEGIN_SRC sql
+SELECT NOT '{1,2}'::integer[] && '{1}'::integer[];
+#+END_SRC
