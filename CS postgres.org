@@ -109,6 +109,14 @@ SELECT show_cache_stats();
 #+END_SRC
 
 ** SQL language
+*** Alter table, add column
+#+BEGIN_SRC sql
+ALTER TABLE chronos_scan ADD COLUMN task_uuid CHARACTER VARYING(40);
+#+END_SRC
+*** Alter table, add default
+#+BEGIN_SRC sql
+ALTER TABLE chronos_scan ALTER COLUMN status SET DEFAULT 'started';
+#+END_SRC
 *** Generate table name in loop
 #+BEGIN_SRC sql
 DO
@@ -217,4 +225,18 @@ SELECT tags FROM item WHERE array_length(tags, 1) != 0;
 *** Check if arrays overlaps
 #+BEGIN_SRC sql
 SELECT NOT '{1,2}'::integer[] && '{1}'::integer[];
+#+END_SRC
+
+*** Copy table data to CSV
+#+BEGIN_SRC sql
+\copy (SELECT t.title_code, i.item_code, i.tags FROM item i LEFT JOIN title t ON t.id = i.title_id WHERE array_length(i.tags, 1) != 0) TO '/tmp/items_with_tags.csv' CSV HEADER DELIMITER E'\t';
+#+END_SRC
+
+*** Query json object
+#+BEGIN_SRC sql
+select * from transaction_details_60 where created_at > '2023-03-01 00:00:00' and created_at < '2023-03-02 00:00:00' and ext_meta -> 'memo' ->> 'eventID' in ('231202', '231203', '231204', '231205');
+#+END_SRC
+*** Sort entries by number of columns for each distinct column, sort by number of entries per distinct
+#+BEGIN_SRC sql
+SELECT il.inventory_id, array_length(array_agg(il.id), 1) AS al FROM inventory_line_0 il GROUP BY il.inventory_id ORDER BY al DESC;
 #+END_SRC

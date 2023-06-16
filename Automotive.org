@@ -7,6 +7,8 @@
 
 - [[wiki:index][Index]]
 
+- Parent: [[wiki:index][index]]
+
 - Related:
 
 * Automotive
@@ -21,3 +23,5 @@
 
 *** [[wiki:Jeep_Cherokee_XJ][Jeep_Cherokee_XJ]]
     Jeep Cherokee XJ related
+*** [[wiki:Subaru_XV][Subaru_XV]]
+    Subaru XV related
