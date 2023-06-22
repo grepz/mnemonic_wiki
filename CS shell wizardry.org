@@ -24,3 +24,15 @@ When one needs to save script absolute path for later usage
 #+BEGIN_SRC sh
 export MAKESELF_SHAR="$( cd "$(dirname "$0")" && pwd)/$(basename "$0")"
 #+END_SRC
+
+*** Trap
+When cleanup in script is needed no matter what, trap may be used
+#+BEGIN_SRC sh
+#!/usr/bin/env sh
+
+finish() {
+    echo "finish"
+}
+
+trap finish EXIT
+#+END_SRC
