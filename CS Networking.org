@@ -135,6 +135,10 @@ LISTEN         0              128                           0.0.0.0:15672       
 skmem:(r0,rb87380,t0,tb16384,f0,w0,o0,bl0,d0)
 #+END_SRC
 
+*** Add/delete latency for all incoming packets
+#+BEGIN_SRC sh
+tc qdisc add dev $device_name root netem delay ${delay_in_ms}ms
+tc qdisc del dev $device_name root netem delay ${delay_in_ms}ms
 ** Netowrk course
 *** Week 1
 
