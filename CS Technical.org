@@ -42,5 +42,6 @@
 ** [[wiki:CS Networking][CS Networking]]
    Networking related
 
+** [[wiki:CS Python][CS Python]]
 ** [[wiki:CS Misc][CS Misc]]
    Various stuff

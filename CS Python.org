@@ -1,0 +1,48 @@
+#+TITLE: CS Python
+#+DESCRIPTION:
+#+KEYWORDS:
+#+OPTIONS: ^:nil
+#+STARTUP:  content
+#+DATE: 2023-06-29
+
+- [[wiki:index][Index]]
+
+- Parent: [[wiki:CS Technical][CS Technical]]
+
+- Related:
+
+* To read
+
+* CS Python
+** Command line tools embedded in Python
+1. HTTP Server
+Start server on port 8001
+#+BEGIN_SRC sh
+python -m http.server 8001
+#+END_SRC
+2. Base64
+#+BEGIN_SRC sh
+$ python -m base64 -h
+option -h not recognized
+usage: /home/grepz/.asdf/installs/python/3.9.13/lib/python3.9/base64.py [-d|-e|-u|-t] [file|-]
+        -d, -u: decode
+        -e: encode (default)
+        -t: encode and decode string 'Aladdin:open sesame'
+#+END_SRC
+3. json tool
+#+BEGIN_SRC sh
+echo '{"foo": "bar", "baz": [1, 2, 3]}' | python -m json.tool
+
+{
+    "foo": "bar",
+    "baz": [
+        1,
+        2,
+        3
+    ]
+}
+#+END_SRC
+4. Calendar
+#+BEGIN_SRC sh
+python -m calendar
+#+END_SRC
