@@ -54,3 +54,7 @@ git reset --hard HEAD~1
 #+BEGIN_SRC sh
 git checkout HEAD -- my-file.txt
 #+END_SRC
+** Show changes/commits done to a file
+#+BEGIN_SRC sh
+git log -p --stat -- filename
+#+END_SRC
