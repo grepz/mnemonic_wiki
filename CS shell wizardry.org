@@ -17,6 +17,10 @@
 awk '{str = sprintf("%s %s", str, $2)} END {print str}' ids.txt
 #+END_SRC
 
+*** Get first and last line from file
+#+BEGIN_SRC sh
+awk 'NR==1{print}; END {print}'
+#+END_SRC
 ** Shell
 
 *** Selfpath
