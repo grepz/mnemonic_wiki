@@ -240,3 +240,10 @@ select * from transaction_details_60 where created_at > '2023-03-01 00:00:00' an
 #+BEGIN_SRC sql
 SELECT il.inventory_id, array_length(array_agg(il.id), 1) AS al FROM inventory_line_0 il GROUP BY il.inventory_id ORDER BY al DESC;
 #+END_SRC
+*** Partial postgres restore
+#+BEGIN_SRC sh
+# Create table content of a backup, with only $table_name in it
+pg_restore -l $path_to_backup  | grep $table_name > table_content.txt
+# Restore only tables listed in table_content.txt, -j 8 parallelize process
+pg_restore -j 8 -U $dbuser -h $dbhost -L  table_content.txt --dbname=$dbname --clean -Fd -v $path_to_backup
+#+END_SRC
