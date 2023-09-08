@@ -96,6 +96,7 @@ usr sys idl wai hiq siq:usr sys idl wai hiq siq| read  writ| recv  send|  in   o
  23   9  67   0   0   1: 68  19   7   0   0   6|   0     0 |9223k 4487k|   0     0 |  47k  197k
 #+END_SRC
 *** Get info on cores, every second, 10 times
+sar is part of systat package
 #+BEGIN_SRC sh
  sar -P ALL 1 10
 Linux 3.10.0-1127.8.2.el7.x86_64 (ed-v-perfplatform-129.be.core.pw) 	18.01.2023 	_x86_64_	(16 CPU)
