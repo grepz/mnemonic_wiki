@@ -15,11 +15,15 @@
 ** Sprokets and chains
 *** Sprokets correlation table
     Таблица передаточных отношений для звёзд.
+    #+attr_html: :width 100%
+    #+attr_latex: :width 100%
     [[file:Motorcycles/sprokets.png][file:Motorcycles/sprokets.png]]
 
 ** Carburetors
 *** spark plug color
     Цвет нагара на свечи и что он значит
+    #+attr_html: :width 100%
+    #+attr_latex: :width 100%
     [[file:Motorcycles/spark_plug.jpg][file:Motorcycles/spark_plug.jpg]]
 
 ** Tires

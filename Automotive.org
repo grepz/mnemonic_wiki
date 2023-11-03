@@ -17,8 +17,9 @@
    General info on motorcycles
 
 *** [[wiki:BMW_F850GS][BMW_F850GS]]
-   BMW F850GS motorcycle
-
+   BMW F850GS 2018 motorcycle
+*** [[wiki:KTM_690R][KTM_690R]]
+   KTM 690 Enduro R 2023 motorcycle
 ** Cars
 
 *** [[wiki:Jeep_Cherokee_XJ][Jeep_Cherokee_XJ]]

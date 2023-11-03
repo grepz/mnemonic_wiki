@@ -124,3 +124,12 @@ Linux 3.10.0-1127.8.2.el7.x86_64 (ed-v-perfplatform-129.be.core.pw) 	18.01.2023 
 #+BEGIN_SRC sh
 inxi -F
 #+END_SRC
+** Read process stdout
+- General approach:
+#+BEGIN_SRC sh
+  strace -e write -p <pid>
+#+END_SRC
+- When process stdout is not connected to tty or redirected to /dev/null
+#+BEGIN_SRC sh
+  tail -f /proc/<pid>/fd/1
+#+END_SRC

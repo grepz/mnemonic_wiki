@@ -1,0 +1,65 @@
+#+TITLE: KTM_690R
+#+DESCRIPTION:
+#+KEYWORDS:
+#+OPTIONS: ^:nil
+#+STARTUP:  content
+
+
+- [[wiki:index][Index]]
+
+- Parent: [[wiki:Automotive][Automotive]]
+
+- Related:
+
+* KTM_690R
+** Расходники и запчасти
+** Техобслуживание
+** Тюнинг
+*** Защита
+**** Crashbars
+- Outback motortek
+  link: https://outbackmotortek.net/product/ktm-690r-adventure-crash-bars/
+
+  #+attr_html: :width 100%
+  #+attr_latex: :width 100%
+  image: [[file:KTM_690R/crashbars.jpg][file:KTM_690R/crashbars.jpg]]
+**** Windscreens/towers/supports
+- Adventure spec fairing support
+  link: https://www.adventurespec.com/shop/as-hmf-0040-b-adventure-spec-ktm-690-gasgas-700-husqvarna-701-fairing-support-1198?category=42#attr=1205
+
+  #+attr_html: :width 100%
+  #+attr_latex: :width 100%
+  image: [[file:KTM_690R/adventure_spec_fairingsupport.jpeg][file:KTM_690R/adventure_spec_fairingsupport.jpeg]]
+- Adventure spec windscreen
+  link: https://www.adventurespec.com/shop/adventure-spec-fairing-screen-690-700-701-fit-1199?category=42#attr=1212
+
+  #+attr_html: :width 100%
+  #+attr_latex: :width 100%
+  image  [[file:KTM_690R/adventure_spec_windscreen.jpeg][file:KTM_690R/adventure_spec_windscreen.jpeg]]
+
+- Licenseplate holder
+  link: https://fueldongle.es/en/products/soporte-porta-matriculas-zieger-pro-husqvarna-701-ktm-690-gasgas-700?rq=md_ktm~mk_690-enduro-enduro-r~xk_2023
+
+  #+attr_html: :width 100%
+  #+attr_latex: :width 100%
+  image: [[file:KTM_690R/licenseplate_holder.png][file:KTM_690R/licenseplate_holder.png]]
+- Italian tower
+  link: https://www.4kpartispeciali.com/negozio/TORRETTA-NAVIGAZIONE-FISSA-KTM-690-4K-p552049436
+
+  #+attr_html: :width 100%
+  #+attr_latex: :width 100%
+  image: [[file:KTM_690R/italian_tower.jpg][file:KTM_690R/italian_tower.jpg]]
+
+- Nomad navigation tower
+  link: https://www.nomad-adv.com/store/p1046/2019-23_KTM_690_Nomad_Navigation_Tower.html
+
+  #+attr_html: :width 100%
+  #+attr_latex: :width 100%
+  image: [[file:KTM_690R/nomad_navigation_tower.jpeg][file:KTM_690R/nomad_navigation_tower.jpeg]]
+
+- Motoboxer rally tower
+  link: https://www.motoboxer.eu/produit/rally-fairing-kit-2-led-lights-husqvarna-701-ktm-690-gasgas-700-ec/
+
+  #+attr_html: :width 100%
+  #+attr_latex: :width 100%
+  image: [[file:KTM_690R/motoboxer_tower.png][file:KTM_690R/motoboxer_tower.png]]

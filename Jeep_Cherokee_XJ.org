@@ -4,7 +4,6 @@
 #+OPTIONS: ^:nil
 #+STARTUP:  content
 
-
 - [[wiki:index][Index]]
 
 - Prarent: [[wiki:Automotive][Automotive]]
@@ -270,7 +269,11 @@ Limited-Slip , сначала добавляется присадка, пото�
 
 *** Engine Bay Fuse Box (PDC)
 Kick Panel Fusebox
+#+attr_html: :width 100%
+#+attr_latex: :width 100%
 [[file:Jeep_Cherokee_XJ/fuse_box.png][file:Jeep_Cherokee_XJ/fuse_box.png]]
+#+attr_html: :width 50%
+#+attr_latex: :width 50%
 [[file:Jeep_Cherokee_XJ/fuse_box_descr.png][file:Jeep_Cherokee_XJ/fuse_box_descr.png]]
 
 *** Troubleshooting
@@ -285,7 +288,8 @@ Kick Panel Fusebox
 компьютеру получить коды неисправностей, которые могут поступить от датчиков,
 контролирующих КПП, обороты двигателя или кондиционер.
 
-
+#+attr_html: :width 50%
+#+attr_latex: :width 50%
 [[file:Jeep_Cherokee_XJ/engdiag1mini.jpg][file:Jeep_Cherokee_XJ/engdiag1mini.jpg]]
 
 
@@ -450,6 +454,8 @@ These are 4 parts that seem to be often be culprits of poorly running XJ's:
 1. Turn ignition to on.
 2. Make sure jeep is in park.
 3. Lock started ends with screwdriver(see image).
+#+attr_html: :width 100%
+#+attr_latex: :width 100%
 [[file:Jeep_Cherokee_XJ/2023-02-20_09_02_57.png][file:Jeep_Cherokee_XJ/2023-02-20_09_02_57.png]]
 
 ** Запчасти
@@ -462,9 +468,13 @@ These are 4 parts that seem to be often be culprits of poorly running XJ's:
   Oil pressure switch OE - NUMBER 5149064AB. https://www.autodoc.lt/ridex/14347174
 
 *** Мосты
+#+attr_html: :width 100%
+#+attr_latex: :width 100%
 [[file:Jeep_Cherokee_XJ/axles.png][file:Jeep_Cherokee_XJ/axles.png]]
 
 *** Кардан
+#+attr_html: :width 100%
+#+attr_latex: :width 100%
 [[file:Jeep_Cherokee_XJ/cardan.png][file:Jeep_Cherokee_XJ/cardan.png]]
 
 *** Масла
@@ -899,7 +909,8 @@ radiator.
       back from the relay connector (Fig. 42). If continuity exists replace the
       fan motor. If continuity is not found repair open and retest.
 
-
+#+attr_html: :width 100%
+#+attr_latex: :width 100%
 [[file:Jeep_Cherokee_XJ/Auxiliary_Fan_Schematic_Fig_42.jpg][file:Jeep_Cherokee_XJ/Auxiliary_Fan_Schematic_Fig_42.jpg]]
 
 
@@ -931,6 +942,8 @@ terminal 2 of fan relay connector (Fig. 43). Replace fan diode assembly
 (Fig. 42) if battery voltage is not present. If battery voltage is not present
 perform (1) and (2) above.
 
+#+attr_html: :width 50%
+#+attr_latex: :width 50%
 [[file:Jeep_Cherokee_XJ/Auxiliary_Fan_Relay_Fig_43.jpg][file:Jeep_Cherokee_XJ/Auxiliary_Fan_Relay_Fig_43.jpg]]
 
 *Vehicle Not Equipped With Air Conditioning*

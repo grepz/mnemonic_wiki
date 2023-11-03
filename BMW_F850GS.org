@@ -54,6 +54,8 @@
 
 *** Лягушка индикации заднего тормоза
 part number: 44655 C0019
+#+attr_html: :width 100%
+#+attr_latex: :width 100%
 [[file:BMW_F850GS/brake_indicator.jpg][file:BMW_F850GS/brake_indicator.jpg]]
 
 ** Техобслуживание
@@ -79,6 +81,8 @@ part number: 44655 C0019
 Разница между min и max == 0.5L
 
 *** Замена масла
+#+attr_html: :width 100%
+#+attr_latex: :width 100%
 - Моменты затяжки: [[file:BMW_F850GS/torques.png][file:BMW_F850GS/torques.png]]
 - Киты: You can use this kit which has 4 oil filters + tool + washers you'll need: https://www.beemerboneyard.com/11427721779wck.html (don't forget ADVRIDER discount code for 10% off)
 - Видео: https://www.youtube.com/watch?v=ewvrKSaJGzw
@@ -132,6 +136,8 @@ Only difference is, we didn't wait overnight just 15 minutes and the oil filter 
 - Отсоединить шланг с креплений
 - Надавить и держать кнопку
 - Снять фильтр потянув вверх
+#+attr_html: :width 100%
+#+attr_latex: :width 100%
 [[file:BMW_F850GS/air_filer_change.png][file:BMW_F850GS/air_filer_change.png]]
 
 
@@ -142,6 +148,8 @@ Only difference is, we didn't wait overnight just 15 minutes and the oil filter 
 - Wunderlich
   link: https://www.wunderlich.de/shop/en/bmw-f-series/f-850-gs/protection/foot-leg-protectors.html
 
+  #+attr_html: :width 100%
+  #+attr_latex: :width 100%
   image: [[file:BMW_F850GS/exhaust_guard.png][file:BMW_F850GS/exhaust_guard.png]]
 
 **** Защита рычагов
@@ -149,4 +157,6 @@ Only difference is, we didn't wait overnight just 15 minutes and the oil filter 
 
   link: https://www.hepco-becker.de/en/meinbike/bmw/f-850-gs-2018/handguardset-black-for-bmw-f-850-gs-2018.html
 
+  #+attr_html: :width 100%
+  #+attr_latex: :width 100%
   image: [[file:BMW_F850GS/handguards.png][file:BMW_F850GS/handguards.png]]
