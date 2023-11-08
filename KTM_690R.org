@@ -23,7 +23,7 @@
   #+attr_html: :width 100%
   #+attr_latex: :width 100%
   image: [[file:KTM_690R/crashbars.jpg][file:KTM_690R/crashbars.jpg]]
-**** Windscreens/towers/supports
+*** Windscreens/towers/supports
 - Adventure spec fairing support
   link: https://www.adventurespec.com/shop/as-hmf-0040-b-adventure-spec-ktm-690-gasgas-700-husqvarna-701-fairing-support-1198?category=42#attr=1205
 
