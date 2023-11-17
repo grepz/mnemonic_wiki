@@ -12,3 +12,4 @@
 ** [[wiki:Sport][Sport]]
    Various sports
 ** [[wiki:Traveling][Traveling]]
+** [[wiki:3D printing][3D printing]]

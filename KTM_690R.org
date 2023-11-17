@@ -50,7 +50,7 @@
 
   #+attr_html: :width 100%
   #+attr_latex: :width 100%
-  image  [[file:KTM_690R/universal_support.jpeg][file:KTM_690R/universal_support.jpeg]]
+  image  [[file:KTM_690R/universal_support.jpeg][file:KTM_690R/universal_support.jpeg]
 
 - Licenseplate holder
   link: https://fueldongle.es/en/products/soporte-porta-matriculas-zieger-pro-husqvarna-701-ktm-690-gasgas-700?rq=md_ktm~mk_690-enduro-enduro-r~xk_2023
