@@ -12,11 +12,35 @@
 - Related:
 
 * 3D printing
+** Different usefull links
+#+ATTR_HTML: :border 2 :rules all :frame border
+| Link                                                                                                                | Category                | Description                                                            |
+|---------------------------------------------------------------------------------------------------------------------+-------------------------+------------------------------------------------------------------------|
+| https://filalab.shop/                                                                                               | shop                    | Good shop with 3d printing accessories, filament included              |
+| https://www.prusa3d.com/                                                                                            | shop                    | Premium plastic and accessories                                        |
+| https://eu.store.bambulab.com/                                                                                      | shop                    | Good shop with plastic                                                 |
+| https://www.klipper3d.org/                                                                                          | documentation           | klipper firmware documentation                                         |
+| https://k3d.tech/calibrations/                                                                                      | documentation, software | Calibration for printer                                                |
+| https://3dpt.ru/page/faq                                                                                            | documentation           | Description of various problems that one can experience while printing |
+| https://www.youtube.com/watch?v=I8-h8mLnexw                                                                         | documentation, video    | Video on autodesk fusion 360 app                                       |
+| https://www.youtube.com/watch?v=ZDqtIduwf0Y                                                                         | documentation, video    | Video about modeling for 3d print                                      |
+| https://www.youtube.com/watch?v=BMbgFgzPcG8                                                                         | documentation, video    | Video about configuration for 3d printing                              |
+| https://youtu.be/Xf8D3R_VADo?si=55c-rspaj0cQ7YpA                                                                    | documentation, video    | Video on how to print "bridges"                                        |
+| https://www.youtube.com/watch?v=p8gptRtjBFo                                                                         | documentation, video    | Video on retraction calbiration                                        |
+| https://www.youtube.com/watch?v=XBlaabitjvg                                                                         | documentation, video    | Video on linear advance                                                |
+| https://www.youtube.com/watch?v=doenKnVk0Ec                                                                         | documentation, video    | Video on initial printer setup                                         |
+| https://3dtoday.ru/blogs/sakkra2005/kak-otkalibrovat-stol-pravilno-i-pocemu-na-samom-dele-ne-rabotaet-metod-bumazki | documentation           | On how to properly calibrate 3d printer bed                            |
+| https://www.printables.com                                                                                          | models                  | Site with 3d models for printing                                       |
+| https://www.thingiverse.com/                                                                                        | models                  | Site with 3d models for printing                                       |
+| https://github.com/dw-0/kiauh                                                                                       | software                | Great install script and manager for heap of other software            |
+| https://www.youtube.com/watch?v=W_VHbT_tsZw                                                                         | documentation, video    | On input shaping using Pi Pico                                         |
+| https://www.youtube.com/watch?v=CzgOCkJbcxE                                                                         | documentation, video    | On filaments and their properties                                      |
+| https://github.com/jlas1/Klicky-Probe                                                                               | software                | Z-axis calibration                                                     |
 
 ** Printer configuration and calibration
 
 *** Bed leveling howto
-1. Check in printer.cfg that
+- Check in printer.cfg that
    #+BEGIN_SRC sh
      $ sed -n -E '/\[stepper_z\]|#\*# \[stepper_z\]/,/^$|#\*#/ p' printer_data/config/printer.cfg
    #+END_SRC
@@ -29,24 +53,24 @@
    autogenerated (#*#) value. And uncomment direct setup in stepper_z section.
    Afte all changes done, make printer re-read config, usually resetting it will
    do the trick.
-2. Return head home by all the axis(X,Y,Z)
-3. Warm up printer nozzle.
+- Return head home by all the axis(X,Y,Z)
+- Warm up printer nozzle.
    #+ATTR_HTML: :border 2 :rules all :frame border
    | Name   | Temp |
    |--------+------|
    | Nozzle |  225 |
    | Bed    |   70 |
-4. Clean up nozzle from any risidual fillament. Better to do on heated nozzle,
+- Clean up nozzle from any risidual fillament. Better to do on heated nozzle,
    else plastic is hard to get rid of.
-5. Get yourself a fine feeler gauge. Like this one:
+- Get yourself a fine feeler gauge. Like this one:
    #+attr_html: :width 50%
    #+attr_latex: :width 50%
    [[file:3D_printing/feeler_gauge.jpg][file:3D_printing/feeler_gauge.jpg]]
 
    Use one of the feelers, 0.2mm in this example.
-6. Change Z offset to a filler size, in example it will be 0.2mm. Save
+- Change Z offset to a filler size, in example it will be 0.2mm. Save
    configuration and reset printer.
-7. Take any equally distant points on a bed, they will be used for measurement.
+- Take any equally distant points on a bed, they will be used for measurement.
    Move head to designated points and make sure that feeler gauge with choosen
    size is able to squeeze between nozzle and bed. Adjust bed screws if
    neccessary. You should feel some resistance when pushing feeler between
@@ -58,8 +82,8 @@
 
    Nota bene: On working printer it is adviced to move head issuing proper
    commands to it.
-8. Return head to HOME
-9. Run command
+- Return head to HOME
+- Run command
    #+BEGIN_SRC txt
    BED_MESH_CALIBRATE
    #+END_SRC
@@ -79,7 +103,7 @@
    #+attr_latex: :width 50%
    [[file:3D_printing/mesh_map.jpg][file:3D_printing/mesh_map.jpg]]
 
-   When done and map looks good, issue command
+- When done and map looks good, issue command
    #+BEGIN_SRC
      SAVE_CONFIG
    #+END_SRC
