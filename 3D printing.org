@@ -125,3 +125,8 @@ https://k3d.tech/calibrations/la/k3d_la.html
 And howto:
 
 https://k3d.tech/calibrations/la/
+
+** Calibrations to do when using new filament
+1. Do LA calibration
+2. Do retraction calibration
+3. Make some temperature adjustments
