@@ -89,6 +89,83 @@ SELECT name, setting,unit FROM pg_settings
 #+END_SRC
 
 
+** Operations not requiring exclusive accesses or long locks
+1. ADD COLUMN
+2. SET DEFAULT
+3. SET NOT NULL
+4. RENAME COLUMN
+5. ALTER COLUMN a TYPE varchar(30);
+6. DROP COLUMN
+** Ease up Postgres locking when needed
+*** Add constraint
+Basic approach has serious issues, it will require exclusive access to table
+#+BEGIN_SRC sql
+  ALTER TABLE table_name ADD CONSTRAINT constraint_name CHECK (column_name > 1);
+#+END_SRC
+Can be re-done as follows. Will not require to check existing entries, only be
+applied to new ones.
+#+BEGIN_SRC sql
+  ALTER TABLE table_name ADD CONSTRAINT constraint_name CHECK (column_name > 1) NOT VALID;
+#+END_SRC
+And later validation can be done with separate instruction:
+#+BEGIN_SRC sql
+  ALTER TABLE table_name VALIDATE CONSTRAINT constraint_name;
+#+END_SRC
+*** Add unique column
+Original approach will require lock while bulding index under UNIQUE
+#+BEGIN_SRC sql
+  ALTER TABLE table_name ADD COLUMNT column_name UNIQUE;
+#+END_SRC
+Can be redone as two operations, creating index concurrently and using created
+index for column:
+#+BEGIN_SRC sql
+  CREATE UNIQUE INDEX CONCURRENTLY index_name ON table_name(column_name);
+  ALTER TABLE table_name ADD CONSTRAINT constraint_name UNIQUE USING INDEX index_name;
+#+END_SRC
+*** Change column type
+Chaning column type will require table rewrite and probably index rebuild,
+original approach:
+#+BEGIN_SRC sql
+  ALTER TABLE table_name ALTER COLUMN column_name TYPE type USING(...);
+#+END_SRC
+Changed approach, add additional column with proper type, create trigger to
+write also to new column, copy data from old column to new, delete old column,
+rename new to old:
+#+BEGIN_SRC sql
+  ALTER TABLE table_name ADD COLUMN column_name_new type;
+  CREATE TRIGGER trigger_name
+   AFTER INSERT OR UPDATE ON table_name
+   FOR EACH ROW
+   BEGIN
+   ...
+   END;
+  UPDATE table_name SET ...;
+
+  BEGIN;
+  DELETE TRIGGER trigger_name;
+  ALTER TABLE table_name DROP COLUMN column_name;
+  ALTER TABLE table_name RENAME column_name_new TO column_name;
+  COMMIT;
+#+END_SRC
+*** Add new column with default
+Adding new column with some preset value will require to update ALL rows in
+table, thus requiring extensive access to table.
+Original approach:
+#+BEGIN_SRC sql
+  ALTER TABLE table_name ADD COLUMN column_name INTEGER DEFAULT -1 NOT NULL;
+#+END_SRC
+Can be redone as creating column first, then setting default, then updating old
+entries then adding not null.
+#+BEGIN_SRC sql
+  BEGIN;
+  ALTER TABLE table_name ADD COLUMN column_name INTEGER;
+  ALTER TABLE table_name ALTER COLUMN column_name SET DEFAULT -1;
+  COMMIT;
+
+  UPDATE table_name SET column_name = -1 WHERE id IN (SELECT id FROM table_name WHERE column_name IS NULL LIMIT 10000);
+  ALTER TABLE table_name ALTER COLUMN column_name SET NOT NULL;
+#+END_SRC
+
 ** Partitions
 *** Get all partitions for table
 #+BEGIN_SRC sql
