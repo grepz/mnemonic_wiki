@@ -26,3 +26,5 @@
     Jeep Cherokee XJ related
 *** [[wiki:Subaru_XV][Subaru_XV]]
     Subaru XV related
+*** [[wiki:Mazda_2_DE_2008_1.4][Mazda_2_DE_2008_1.4]]
+    All about my mazda

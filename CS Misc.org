@@ -11,7 +11,13 @@
 - Related:
 
 * CS Misc
-
+** C++
+*** To read
+#+ATTR_HTML: :border 2 :rules all :frame border
+| Link                                                                     | Description                        | Saved copy              | Read |
+|--------------------------------------------------------------------------+------------------------------------+-------------------------+------|
+| https://arangodb.com/2021/02/cpp-memory-model-migrating-from-x86-to-arm/ | C++ memory model on ARM(post C++11 | [[wiki:CS Misc/cpp_memory_model][CPP memory model on ARM]] |      |
+|                                                                          |                                    |                         |      |
 ** NGINX
 *** Change error code for upstream and serve custom json
 #+BEGIN_SRC sh

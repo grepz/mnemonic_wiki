@@ -133,3 +133,8 @@ inxi -F
 #+BEGIN_SRC sh
   tail -f /proc/<pid>/fd/1
 #+END_SRC
+** Allow users to see dmesg output
+#+BEGIN_SRC sh
+sudo sysctl kernel.dmesg_restrict=0
+#+END_SRC
+Save this configuration somwhere in /etc/sysctl.d/*
