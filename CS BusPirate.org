@@ -1,0 +1,47 @@
+#+TITLE: CS BusPirate
+#+DESCRIPTION:
+#+KEYWORDS:
+#+OPTIONS: ^:nil
+#+STARTUP:  content
+#+DATE: 2024-02-11
+
+- [[wiki:index][Index]]
+
+- Parent: [[wiki:CS Technical][CS Technical]]
+
+- Related:
+
+* CS BusPirate
+
+** Update firmware
+
+1. Clone BusPirate source code [[https://github.com/BusPirate/Bus_Pirate][here]] and build pirate-loader tool(depending on
+   your version of BusPirate, below is for V4).
+   #+BEGIN_SRC sh
+     $ cd ./package/BPv4-firmware/pirate-loader-v4-source
+     $ make
+     gcc -O2 -Wall  pirate-loader.c -DOS=S -o pirate-loader_lnx
+   #+END_SRC
+2. Attach BusPirate and connect PGD and PGN pins as show on photo.
+   #+attr_html: :width 100%
+   #+attr_latex: :width 100%
+   [[file:CS_BusPirate/buspirate_pgd_pgn.jpg][file:CS_BusPirate/buspirate_pgd_pgn.jpg]]
+3. Upload firmware
+   #+BEGIN_SRC sh
+     $ sudo ./pirate-loader_lnx --dev=/dev/ttyACM0 --hex=../BPv4-firmware-v6.3-r2151.hex
+   #+END_SRC
+   It should all be concluded with string
+   #+BEGIN_SRC sh
+     Firmware updated successfully :)
+   #+END_SRC
+4. Check new version of BusPirate firware
+   #+BEGIN_SRC sh
+     sudo minicom -s /dev/ttyACM0
+
+     HiZ>i
+     Bus Pirate v4
+     Firmware v6.3-beta1 r2151
+     DEVID:0x1019 REVID:0x0004 (24FJ256GB106 UNK)
+     http://dangerousprototypes.com
+     HiZ>
+   #+END_SRC

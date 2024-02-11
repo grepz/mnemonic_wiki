@@ -18,6 +18,8 @@
 
 * CS Technical
 
+** [[wiki:CS BusPirate][CS BusPirate]]
+   BusPirate stuff
 ** [[wiki:CS git][CS git]]
    git lifehacks
 
