@@ -47,3 +47,4 @@
 ** [[wiki:CS Python][CS Python]]
 ** [[wiki:CS Misc][CS Misc]]
    Various stuff
+** [[wiki:CS STM32][CS STM32]]

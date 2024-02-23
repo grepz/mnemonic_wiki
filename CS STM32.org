@@ -1,0 +1,41 @@
+#+TITLE: CS STM32
+#+DESCRIPTION:
+#+KEYWORDS:
+#+OPTIONS: ^:nil
+#+STARTUP:  content
+#+DATE: 2024-02-23
+
+- [[wiki:index][Index]]
+
+- Parent: [[wiki:CS Technical][CS Technical]]
+
+- Related:
+
+* CS STM32
+
+** Flashing Nucleo when st debugger is seprated from the board
+#+attr_html: :width 100%
+#+attr_latex: :width 100%
+[[file:STM32/nucleo_flash_1.jpg][file:STM32/nucleo_flash_1.jpg]]
+** Flashing discovery board
+You'll need to isolate the microcontroller from the st-link portion of the
+board. To do this just remove the jumpers on the CN3 pins.
+#+attr_html: :width 100%
+#+attr_latex: :width 100%
+[[file:STM32/stm32_disco_link.png][file:STM32/stm32_disco_link.png]]
+
+Then, to use your external st-link, make the following connections to the
+microconroller pin headers:
+
+    SWDIO -> PA13
+    SWCLK -> PA14
+    GND -> GND
+
+    VAPP -> 3V/VDD
+
+    Do not connect the USB cable
+
+Program it in SW mode.
+
+Not sure why you'd want to do this, unless you wanted to use JTAG to program it
+instead. If that's the case let me know and I'll update the answer.
