@@ -48,3 +48,4 @@
 ** [[wiki:CS Misc][CS Misc]]
    Various stuff
 ** [[wiki:CS STM32][CS STM32]]
+   Various STM32 related stuff

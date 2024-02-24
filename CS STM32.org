@@ -39,3 +39,29 @@ Program it in SW mode.
 
 Not sure why you'd want to do this, unless you wanted to use JTAG to program it
 instead. If that's the case let me know and I'll update the answer.
+
+** OpenOCD flashing
+#+BEGIN_SRC sh
+  sudo openocd -f /usr/share/openocd/scripts/interface/stlink.cfg -f /usr/share/openocd/scripts/target/stm32f4x.cfg
+  telnet localhost 4444
+  flash write_image erase unlock /home/grepz/Projects/stm32_rust/target/thumbv7em-none-eabihf/release/stm32_rust
+#+END_SRC
+Fixing issue with write protection
+#+BEGIN_SRC sh
+  source [find jlink.cfg]
+  source [find stm32.cfg]
+  init
+  jtag_khz 100
+  flash probe 0
+  halt
+  stm32x unlock 0
+  reset init
+  flash protect 0 0 last off
+  flash erase_sector 0 0 last
+  flash write_bank 0 myapp.bin 0x0
+  flash protect 0 0 last on
+  verify_image myapp.bin 0x0
+  reset run
+  sleep 30
+  shutdown
+#+END_SRC
