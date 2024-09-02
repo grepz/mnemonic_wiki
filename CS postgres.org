@@ -328,3 +328,11 @@ pg_restore -l $path_to_backup  | grep $table_name > table_content.txt
 # Restore only tables listed in table_content.txt, -j 8 parallelize process
 pg_restore -j 8 -U $dbuser -h $dbhost -L  table_content.txt --dbname=$dbname --clean -Fd -v $path_to_backup
 #+END_SRC
+*** Join on array column
+#+BEGIN_SRC sql
+SELECT count(id), array_agg FROM (
+  SELECT td.id, array_agg(n.key) FROM {table_name} td
+  LEFT JOIN namespace n ON n.id = ANY(td.namespaces)
+  GROUP BY td.id, n.id
+) X GROUP BY array_agg order by count DESC
+#+END_SRC

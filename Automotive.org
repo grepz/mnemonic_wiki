@@ -20,6 +20,8 @@
    BMW F850GS 2018 motorcycle
 *** [[wiki:KTM_690R][KTM_690R]]
    KTM 690 Enduro R 2023 motorcycle
+*** [[wiki:Honda_CRF1000L][Honda CRF1000L 2018]]
+   Africa-twin maintenance and stuff
 ** Cars
 
 *** [[wiki:Jeep_Cherokee_XJ][Jeep_Cherokee_XJ]]

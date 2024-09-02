@@ -1,0 +1,52 @@
+#+TITLE: Honda_CRF1000L
+#+DESCRIPTION:
+#+KEYWORDS:
+#+OPTIONS: ^:nil
+#+STARTUP:  content
+#+DATE: 2024-09-02
+
+- [[wiki:index][Index]]
+
+- Parent: [[wiki:Automotive][Automotive]]
+
+- Related:
+
+* Honda_CRF1000L
+** Расходники и запчасти
+*** Масляный фильтр
+- KN-204
+  #+attr_html: :width 50%
+  #+attr_latex: :width 50%
+  image: [[file:Honda_CRF1000L/KN-204_oil_filter.jpg][file:Honda_CRF1000L/KN-204_oil_filter.jpg]]
+
+** Техобслуживание
+*** Замена моторного масла и фмльтра
+#+attr_html: :width 100%
+#+attr_latex: :width 100%
+image: [[file:Honda_CRF1000L/oil_change.jpg][file:Honda_CRF1000L/oil_change.jpg]]
+1. Remove the skid plate – 3 5mm allen/hex bits – 2 underneath towards the front
+   of the plate and 1 on the left side near the foot beg. From there it slides
+   off a small rail on the right side. Mind the little cylinder/spacer and
+   rubber grommet included on the side bolt.
+2. Remove drain bolts – there are TWO of them. Both 12mm. Remove in any
+   order. Make sure oil pan is under both. Rock bike back and forth on center
+   stand to get all the oil out.
+3. Replace drain bolts. Check the crush washers and replace if
+   worn/damaged. Torque for the two 12mm bolts is 22 ft-lbs.
+4. Remove the old oil filter. If using the K&N, a 17mm wrench is handy to remove
+   the filter. Make sure the oil drain pain is below the filter, more oil will
+   come out.
+5. Replace the oil filter. Like I said, I like the K&N filters with the nut on
+   the end. Makes removal so much easier (do NOT use nut on end for
+   install). Part number is KN-204. Honda OEM part number (for reference, if
+   desired) is 15410-MFJD01.
+6. Lubricate the oil filter gasket by using some fresh oil on your
+   finger. Torque for oil filter is 19 ft-lbs.
+7. Refill oil. Remove the oil fill plug and use funnel to pour oil in. 4.3
+   quarts of oil is needed for the manual AT, 4.4 for the DCT. (if just changing
+   oil – no filter – volume is 4.1 quarts for manual and 4.2 quarts for DCT).
+8. After warming up the bike again put bike back on center stand. Check for
+   leaks. Remove the dipstick and wipe it clean. Insert the dipstick until it
+   seats but don’t screw it in. Check that the oil level is between the upper
+   and lower level marks. Replace dipstick and screw back in till snug.
+9. Replace skid plate. 
