@@ -10,6 +10,19 @@
 
 * CS shell wizardry
 
+** tmux
+*** Persist tmux session as ssh login session on server
+1. Add following to .zshrc:
+#+BEGIN_SRC sh
+  if [[ -z $TMUX ]] && [[ -n $SSH_TTY ]]; then
+      exec tmux new-session -A -s loginsession
+  fi
+#+END_SRC
+2. Rebind ctrl+d to just detach from session, not ending it by adding following
+   lines to ~/.tmux.conf
+#+BEGIN_SRC sh
+  bind-key -n C-d detach
+#+END_SRC
 ** AWK
 
 *** Concatenate second column into a single string

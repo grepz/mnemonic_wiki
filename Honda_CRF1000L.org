@@ -19,6 +19,10 @@
   #+attr_latex: :width 50%
   image: [[file:Honda_CRF1000L/KN-204_oil_filter.jpg][file:Honda_CRF1000L/KN-204_oil_filter.jpg]]
 
+*** oil washers
+WASHER, DRAIN PLUG (12MM)
+94109-12000
+94109-14000
 ** Техобслуживание
 *** Замена моторного масла и фмльтра
 #+attr_html: :width 100%
