@@ -12,6 +12,23 @@
 - Related:
 
 * Honda_CRF1000L
+** Info
+*** ПТФ
+- https://www.youtube.com/watch?v=kJylRerTqGw
+- 
+** Log
+| Date             | Odometer | Info                                               |
+|------------------+----------+----------------------------------------------------|
+| <2025-01-25 Sun> |    62483 | Замена масла, замена фильтра масляного, воздушного |
+|                  |          |                                                    |
+** Заметки
+2024-09-01:
+- [ ] Болт в расширителе подножки сорван
+2025-01-26:
+- [ ] отломано минимум 2 крепежа пластика.
+- [ ] Сорван саморез в эйрбоксе слева.
+2025-04-17:
+- [ ] Болт крепления крыла справа остался вместе с гайкой
 ** Расходники и запчасти
 *** Масляный фильтр
 - KN-204
@@ -23,6 +40,9 @@
 WASHER, DRAIN PLUG (12MM)
 94109-12000
 94109-14000
+Inner diameter: 12.5mm
+Outer diameter: 20mm
+Thinkness: 
 ** Техобслуживание
 *** Замена моторного масла и фмльтра
 #+attr_html: :width 100%
@@ -54,3 +74,4 @@ image: [[file:Honda_CRF1000L/oil_change.jpg][file:Honda_CRF1000L/oil_change.jpg]
    seats but don’t screw it in. Check that the oil level is between the upper
    and lower level marks. Replace dipstick and screw back in till snug.
 9. Replace skid plate. 
+   

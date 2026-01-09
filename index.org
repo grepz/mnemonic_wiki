@@ -13,3 +13,4 @@
    Various sports
 ** [[wiki:Traveling][Traveling]]
 ** [[wiki:3D printing][3D printing]]
+** [[wiki:Guitar][Guitar]]

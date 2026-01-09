@@ -336,3 +336,7 @@ SELECT count(id), array_agg FROM (
   GROUP BY td.id, n.id
 ) X GROUP BY array_agg order by count DESC
 #+END_SRC
+*** Get all entries that have more then one entry with regards to one column and distinct values in another
+#+BEGIN_SRC sql
+ SELECT trx_id FROM tablename GROUP BY some_parent_id HAVING COUNT(DISTINCT table_id) > 1 AND COUNT(DISTINCT some_value_field) > 1;
+#+END_SRC

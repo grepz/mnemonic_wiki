@@ -1,0 +1,51 @@
+#+TITLE: Guitar
+#+DESCRIPTION:
+#+KEYWORDS:
+#+OPTIONS: ^:nil
+#+STARTUP:  content
+
+
+- [[wiki:index][Index]]
+
+- Parent: [[wiki:index][index]]
+
+- Related:
+
+* Guitar
+** Arpegio
+- A
+  #+attr_html: :width 100%
+  #+attr_latex: :width 100%
+  image: [[file:Guitar/A.png][file:Guitar/A.png]]
+- Am
+  #+attr_html: :width 100%
+  #+attr_latex: :width 100%
+  image: [[file:Guitar/Am.png][file:Guitar/Am.png]]
+- C
+  #+attr_html: :width 100%
+  #+attr_latex: :width 100%
+  image: [[file:Guitar/C.png][file:Guitar/C.png]]
+- D
+  #+attr_html: :width 100%
+  #+attr_latex: :width 100%
+  image: [[file:Guitar/D.png][file:Guitar/D.png]]
+- Dm
+  #+attr_html: :width 100%
+  #+attr_latex: :width 100%
+  image: [[file:Guitar/Dm.png][file:Guitar/Dm.png]]
+- E
+  #+attr_html: :width 100%
+  #+attr_latex: :width 100%
+  image: [[file:Guitar/E.png][file:Guitar/E.png]]
+- Em
+  #+attr_html: :width 100%
+  #+attr_latex: :width 100%
+  image: [[file:Guitar/Em.png][file:Guitar/Em.png]]
+- F
+  #+attr_html: :width 100%
+  #+attr_latex: :width 100%
+  image: [[file:Guitar/F.png][file:Guitar/F.png]]
+- G
+  #+attr_html: :width 100%
+  #+attr_latex: :width 100%
+  image: [[file:Guitar/G.png][file:Guitar/G.png]]

@@ -67,6 +67,30 @@ resize2fs /dev/mapper/vg_test-lv_root
 mount /home
 #+END_SRC
 
+** Minimize initrd image size
+Change /etc/initramfs-tools/initramfs.conf configuration to
+#+BEGIN_SRC txt
+#
+# initramfs.conf
+# Configuration file for mkinitramfs(8). See initramfs.conf(5).
+#
+# Note that configuration options from this file can be overridden
+# by config files in the /etc/initramfs-tools/conf.d directory.
+
+#
+# MODULES: [ most | netboot | dep | list ]
+#
+# most - Add most filesystem and all harddrive drivers.
+#
+# dep - Try and guess which modules to load.
+#
+# netboot - Add the base modules, network modules, but skip block devices.
+#
+# list - Only include modules from the 'additional modules' list
+#
+
+MODULES=dep
+#+END_SRC
 ** Get CPU usage
 ** Get info on available hash storage format and crypto
 #+BEGIN_SRC sh
@@ -138,3 +162,52 @@ inxi -F
 sudo sysctl kernel.dmesg_restrict=0
 #+END_SRC
 Save this configuration somwhere in /etc/sysctl.d/*
+** Raid managment
+*** Creating raid0 from scratch
+- Create a raid on a basis of already created partition(GPT)
+#+BEGIN_SRC sh
+  mdadm --create --verbose /dev/md0 --force --level=1 --raid-devices=1 /dev/sdb1
+#+END_SRC
+- Use mkfs to make proper filesystem on a created raid
+#+BEGIN_SRC sh
+  mkfs.ext4 /dev/md0
+#+END_SRC
+- Copy data from soon be included disk to a raid partition
+#+BEGIN_SRC sh
+  sudo rsync -ai /media/p1/* /media/p2/
+#+END_SRC
+- Grow raid with second partition
+#+BEGIN_SRC sh
+  sudo mdadm --grow /dev/md0 --raid-devices=2 --add /dev/sda1
+#+END_SRC
+- Check raid
+#+BEGIN_SRC sh
+  sudo mdadm --detail /dev/md0
+#+END_SRC
+*** Remove disk from raid
+- Check raid setup
+#+BEGIN_SRC sh
+  mdadm --detail /dev/md-
+#+END_SRC
+- Unmound raid parition
+#+BEGIN_SRC sh
+  umount /dev/md0
+#+END_SRC
+- Identify raid device
+#+BEGIN_SRC sh
+  cat /proc/mdstat
+#+END_SRC
+- Stop raid, remove from configuration if needed
+#+BEGIN_SRC sh
+  mdadm --stop /dev/md0
+  zile /etc/mdadm/mdadm.conf
+#+END_SRC
+- Remove device from raid, remove superblocks
+#+BEGIN_SRC sh
+mdadm --fail /dev/sdf1 --remove /dev/sdf1
+mdadm --zero-superblock /dev/sdb1
+#+END_SRC
+- Verify device deleted
+#+BEGIN_SRC
+cat /proc/mdstat
+#+END_SRC

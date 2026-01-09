@@ -1,0 +1,24 @@
+#+TITLE: Ford_Transit_2001
+#+DESCRIPTION:
+#+KEYWORDS:
+#+OPTIONS: ^:nil
+#+STARTUP:  content
+#+DATE: 2025-12-15
+
+- [[wiki:index][Index]]
+
+- Parent: [[wiki:Automotive][Automotive]]
+
+- Related:
+
+* Ford Transit 2001
+** Info
+*** Печка
+- https://www.youtube.com/watch?v=2gm___vTvJI
+** Log
+| Date | Odometer | Info |
+|------+----------+------|
+|      |          |      |
+** Заметки
+** Расходники и запчасти
+** Техобслуживание
